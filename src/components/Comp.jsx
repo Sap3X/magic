@@ -12,16 +12,12 @@ const products = [
     name: "GeoMagic Pro Kit",
     subtitle: "(Instructor Edition)",
     description:
-      "Your comprehensive guide to advanced geometry. Explore complex geometric concepts through professional-grade tools and detailed tutorials. Perfect for educators and advanced learners.",
+      "This dynamic tool is designed for instructors and teachers, equipping them with the resources they need to deliver engaging geometry lessons to their students. GeoMagic Pro facilitates effective teaching and ensures that educators have the right tools to make geometry an exciting learning experience.",
     image:
       "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=500&h=400&fit=crop",
     specs: [
-      [
-        "Professional Strips - 15",
-        "Digital Protractor - 5",
-        "Premium Nuts & Bolts - 25 Sets",
-      ],
-      ["Instructor Manual - 1", "Advanced Spacers - 20", "Teaching Guide - 1"],
+      [""],
+      [""],
     ],
     gradient: "from-purple-400 via-pink-500 to-red-500",
   },
@@ -30,12 +26,23 @@ const products = [
     name: "GeoMagic Circle",
     subtitle: "Edition",
     description:
-      "Master the art of circular geometry with precision tools designed for exploring curves, arcs, and rotational concepts. Unlock the secrets of perfect circles.",
+      "Empower your students to dive into circular geometry with our hands-on kit and engaging tutorials. Foster a deep understanding of circular concepts and inspire learning. Let's embark on this educational adventure together.",
     image:
       "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=500&h=400&fit=crop",
     specs: [
-      ["Circle Strips - 12", "Angle Protractor - 8", "Pivot Bolts - 20 Sets"],
-      ["Circle Manual - 1", "Radius Spacers - 15", "Compass Tool - 3"],
+      ["Primary Circle - 1",
+         "Secondary Large Circle - 1",
+         "Secondary Small Circle - 1",
+         "Primary Strip - 7",
+         "Small Primary Strip - 4",
+         "Secondary Strip - 5"
+      ],
+      ["Protractor - 10",
+         "External Point Piece - 4",
+         "Nuts & Bolts - 15 Sets",
+         "Instruction Manual - 1",
+         "Spacers - 10"
+      ],
     ],
     gradient: "from-blue-400 via-cyan-500 to-teal-500",
   },
@@ -44,16 +51,18 @@ const products = [
     name: "GeoMagic Basic",
     subtitle: "Edition",
     description:
-      "Perfect starting point for geometry exploration. Learn fundamental concepts through interactive activities and step-by-step guidance. Ideal for beginners.",
+      "Your Guide to Line Geometry. Explore the world of lines through hands-on activities and engaging tutorials. Master the essentials of geometry today.",
     image:
       "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?w=500&h=400&fit=crop",
     specs: [
       [
-        "Basic Strips - 8",
-        "Standard Protractor - 5",
-        "Starter Nuts & Bolts - 10 Sets",
+        "Strips - 10",
+        "Protractor - 10",
+        "Nuts & Bolts - 15 Sets",
       ],
-      ["Beginner Manual - 1", "Basic Spacers - 8", "Quick Guide - 1"],
+      ["Instruction Manual - 1",
+        "Spacers - 10"
+      ],
     ],
     gradient: "from-green-400 via-emerald-500 to-cyan-500",
   },
@@ -62,44 +71,57 @@ const products = [
     name: "GeoMagic Mini",
     subtitle: "(Student Edition)",
     description:
-      "Compact geometry kit designed for students. Portable and practical tools that make learning geometry fun and accessible anywhere you go.",
+      "The Ultimate Geometry Experience for Students! GeoMagic Mini is an engaging kit that brings geometry to life with hands-on activities and critical thinking challenges. Unleash the magic of geometry with us.",
     image:
       "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=500&h=400&fit=crop",
     specs: [
-      ["Mini Strips - 6", "Pocket Protractor - 3", "Mini Bolts - 8 Sets"],
-      ["Student Guide - 1", "Compact Spacers - 6", "Sticker Set - 1"],
+      [""],
+      [""],
     ],
     gradient: "from-yellow-400 via-orange-500 to-red-500",
   },
   {
     id: 5,
-    name: "GeoMagic Advanced",
-    subtitle: "Pro Series",
+    name: "GeoMagic Circle",
+    subtitle: "Edition Mini",
     description:
-      "Professional-grade geometry toolkit for advanced mathematical exploration. Features precision instruments and comprehensive learning materials.",
+      "Explore circular geometry like never before with GeoMagic Mini! Our hands-on kit and captivating tutorials are your ticket to mastering circular concepts. Prepare to set sail on an exciting educational journey that will ignite your passion for learning.",
     image:
       "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=500&h=400&fit=crop",
     specs: [
       [
-        "Precision Strips - 20",
-        "Digital Protractor - 10",
-        "Pro Bolts - 30 Sets",
+        "Primary Circle - 1",
+        "Secondary Large Circle - 1",
+        "Secondary Small Circle - 1",
+        "Primary Strip - 7",
+        "Small Primary Strip - 4",
+        "Secondary Strip - 5"
       ],
-      ["Advanced Manual - 2", "Precision Spacers - 25", "Formula Cards - 1"],
+      ["Protractor - 10",
+         "External Point Piece - 4",
+         "Nuts & Bolts - 15 Sets",
+         "Instruction Manual - 1",
+         "Spacers - 10"
+      ],
     ],
     gradient: "from-indigo-400 via-purple-500 to-pink-500",
   },
   {
     id: 6,
-    name: "GeoMagic Deluxe",
-    subtitle: "Complete Set",
+    name: "GeoMagic Basic",
+    subtitle: "Edition Mini",
     description:
-      "The ultimate geometry learning experience. Everything you need to master geometric principles from basic shapes to complex theorems and proofs.",
+      "Your Path to Line Geometry Mastery! Delve into the fascinating realm of lines with our interactive activities and engaging tutorials. This is your chance to become a geometry expert. Begin your geometric journey now!",
     image:
       "https://images.unsplash.com/photo-1607706189992-eae578626c86?w=500&h=400&fit=crop",
     specs: [
-      ["Deluxe Strips - 25", "Multi-Protractor - 12", "Deluxe Bolts - 40 Sets"],
-      ["Complete Manual - 3", "Variable Spacers - 30", "Workbook - 2"],
+      ["Strips - 10",
+         "Protractor - 10",
+         "Nuts & Bolts - 15 Sets"
+      ],
+      ["Instruction Manual - 1",
+         "Spacers - 10"
+      ],
     ],
     gradient: "from-rose-400 via-red-500 to-orange-500",
   },
@@ -323,7 +345,7 @@ function ProductCard({ product, index }) {
         {/* Content side */}
         <div className="flex-1 relative p-4 sm:p-6 lg:p-8 xl:p-12 flex flex-col justify-center z-30">
           {/* Product title with improved yellow background */}
-          <div className="mb-6 lg:mb-8 xl:mb-12 relative flex flex-col justify-center items-center">
+          <div className="mt-6 lg:mt-8 xl:mt-10 relative flex flex-col justify-center items-center">
             {/* Yellow background image as a banner - improved positioning and sizing */}
             <img
               src={Yellow_Bg}
@@ -341,7 +363,7 @@ function ProductCard({ product, index }) {
           </div>
 
           {/* Main description */}
-          <div className="mb-6 lg:mb-8 xl:mb-12">
+          <div className="my-6 lg:my-8 xl:my-12">
             <p className="text-black text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium leading-relaxed text-center lg:text-left xl:text-justify font-['Nunito_Sans'] max-w-2xl lg:max-w-none opacity-90">
               {product.description}
             </p>

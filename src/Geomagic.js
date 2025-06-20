@@ -83,11 +83,11 @@ export default function Magic() {
           />
           
           {/* Gradient overlay at bottom of image */}
-         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-yellow-400 via-yellow-400/80 to-transparent" />
+         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-green-400 via-green-400/80 to-transparent" />
         </div>
 
         {/* Content Section with matching gradient background */}
-        <div className="relative bg-gradient-to-b from-yellow-400 via-green-400 to-green-500 min-h-[40vh] px-4 py-8">
+        <div className="relative bg-gradient-to-b from-green-400 via-yellow-400 to-yellow-500 min-h-[40vh] px-4 py-8">
           {/* Logo Section */}
           <div className="flex flex-col items-center mb-0.5">
             <div className="relative">
@@ -119,7 +119,7 @@ export default function Magic() {
             </h1>
 
             {/* Description */}
-            <p className="text-purple-100/90 text-sm font-light leading-relaxed mb-3 drop-shadow-md">
+            <p className="text-purple-100/90 text-sm font-medium leading-relaxed mb-3 drop-shadow-md">
               Build shapes, explore angles, and dive into trigonometry with
               hands-on parts, a guidebook, and quick video lessons.
             </p>
