@@ -364,7 +364,7 @@ function ProductCard({ product, index }) {
 
           {/* Main description */}
           <div className="my-6 lg:my-8 xl:my-12">
-            <p className="text-black text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium leading-relaxed text-center lg:text-left xl:text-justify font-['Nunito_Sans'] max-w-2xl lg:max-w-none opacity-90">
+            <p className="text-black text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium leading-relaxed text-justify lg:text-left xl:text-justify font-['Nunito_Sans'] max-w-2xl lg:max-w-none opacity-90">
               {product.description}
             </p>
           </div>
@@ -375,7 +375,7 @@ function ProductCard({ product, index }) {
               {product.specs[0].map((spec, idx) => (
                 <p
                   key={idx}
-                  className="text-black text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold leading-relaxed text-center sm:text-left font-['Nunito_Sans']"
+                  className="text-black text-sm sm:text-base md:text-lg font-medium leading-relaxed text-center sm:text-left font-['Nunito_Sans']"
                 >
                   {spec}
                 </p>
@@ -386,7 +386,7 @@ function ProductCard({ product, index }) {
               {product.specs[1].map((spec, idx) => (
                 <p
                   key={idx}
-                  className="text-black text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold leading-relaxed text-center sm:text-left font-['Nunito_Sans']"
+                  className="text-black text-sm sm:text-base md:text-lg font-medium leading-relaxed text-center sm:text-left font-['Nunito_Sans']"
                 >
                   {spec}
                 </p>

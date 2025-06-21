@@ -6,7 +6,8 @@ import ProductShowcase from "./components/Comp";
 import Bg from "./asset/hero_section.webp";
 import ImageCarousel from "./components/Images";
 import Image from "./components/Circular";
-import Logo from "./asset/Geomagic-Logo.png"
+import Logo from "./asset/Geomagic-Logo.png";
+import TestimonialCarousel from "./components/Testimonial"
 
 export default function Magic() {
   return (
@@ -252,6 +253,7 @@ export default function Magic() {
         {/* Product Contain */}
         <ProductShowcase />
         <Image/>
+        <TestimonialCarousel/>
       </div>
     </>
   );
