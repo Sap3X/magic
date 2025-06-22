@@ -198,22 +198,22 @@ const productShapePositions = [
   // Product 3 (image left) - different arrangement
   [
     {
-      shapeIndex: 1,
+      shapeIndex: 0,
       position: "top-6 right-6 sm:top-10 sm:right-10 lg:top-14 lg:right-14",
       rotation: "25deg",
     },
     {
-      shapeIndex: 3,
+      shapeIndex: 1,
       position: "bottom-4 left-6 sm:bottom-6 sm:left-8 lg:bottom-8 lg:left-10",
       rotation: "0deg",
     },
     {
-      shapeIndex: 0,
+      shapeIndex: 2,
       position: "top-1/2 right-1/3 sm:right-2/5 lg:right-1/3",
       rotation: "-30deg",
     },
     {
-      shapeIndex: 2,
+      shapeIndex: 3,
       position: "bottom-1/3 right-4 sm:right-8 lg:right-12",
       rotation: "60deg",
     },
@@ -221,18 +221,18 @@ const productShapePositions = [
   // Product 4 (image right) - different arrangement
   [
     {
-      shapeIndex: 2,
+      shapeIndex: 0,
       position: "top-6 left-6 sm:top-10 sm:left-10 lg:top-14 lg:left-14",
       rotation: "-25deg",
     },
     {
-      shapeIndex: 0,
+      shapeIndex: 1,
       position:
         "bottom-4 right-6 sm:bottom-6 sm:right-8 lg:bottom-8 lg:right-10",
       rotation: "15deg",
     },
     {
-      shapeIndex: 1,
+      shapeIndex: 2,
       position: "top-1/2 left-1/3 sm:left-2/5 lg:left-1/3",
       rotation: "30deg",
     },
@@ -245,23 +245,23 @@ const productShapePositions = [
   // Product 5 (image left) - another variation
   [
     {
-      shapeIndex: 3,
+      shapeIndex: 0,
       position: "top-8 right-8 sm:top-12 sm:right-12 lg:top-16 lg:right-16",
       rotation: "10deg",
     },
     {
-      shapeIndex: 2,
+      shapeIndex: 1,
       position:
         "bottom-8 left-8 sm:bottom-10 sm:left-10 lg:bottom-12 lg:left-12",
       rotation: "-45deg",
     },
     {
-      shapeIndex: 0,
+      shapeIndex: 2,
       position: "top-2/5 right-1/4 sm:right-1/3 lg:right-1/4",
       rotation: "35deg",
     },
     {
-      shapeIndex: 1,
+      shapeIndex: 3,
       position: "bottom-1/5 right-12 sm:right-16 lg:right-20",
       rotation: "0deg",
     },
@@ -269,24 +269,28 @@ const productShapePositions = [
   // Product 6 (image right) - final variation
   [
     {
-      shapeIndex: 1,
-      position: "top-8 left-8 sm:top-12 sm:left-12 lg:top-16 lg:left-16",
+      //star
+      shapeIndex: 0,
+      position: "bottom-8 left-1/2 sm:bottom-20 sm:left-1/3 lg:top-16 lg:left-16",
       rotation: "-10deg",
     },
     {
-      shapeIndex: 0,
+      //c-shape
+      shapeIndex: 3,
       position:
-        "bottom-8 right-8 sm:bottom-10 sm:right-10 lg:bottom-12 lg:right-12",
+        "bottom-1/2 right-8 sm:bottom-10 sm:right-14 lg:bottom-12 lg:right-10",
       rotation: "45deg",
     },
     {
-      shapeIndex: 3,
-      position: "top-2/5 left-1/4 sm:left-1/3 lg:left-1/4",
+      //triangle
+      shapeIndex: 2,
+      position: "top-2/3 left-1/2 sm:top:3/4 sm:left-3/4 lg:left-1/2",
       rotation: "-35deg",
     },
     {
-      shapeIndex: 2,
-      position: "bottom-1/5 left-12 sm:left-16 lg:left-20",
+      //pie
+      shapeIndex: 1,
+      position: "bottom-1/2 left-12 sm:bottom-1/4 sm:left-16 lg:left-16",
       rotation: "25deg",
     },
   ],
