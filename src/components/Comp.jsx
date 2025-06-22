@@ -4,6 +4,7 @@ import Circle1 from "../asset/ellipse-4.png";
 import Circle2 from "../asset/ellipse-6.png";
 import Poly from "../asset/polygon-5.png";
 import Yellow_Bg from "../asset/9833793-27047-picsart-backgroundremover-1.png";
+import image from  "../Images";
 
 // Sample product data
 const products = [
@@ -13,8 +14,7 @@ const products = [
     subtitle: "(Instructor Edition)",
     description:
       "This dynamic tool is designed for instructors and teachers, equipping them with the resources they need to deliver engaging geometry lessons to their students. GeoMagic Pro facilitates effective teaching and ensures that educators have the right tools to make geometry an exciting learning experience.",
-    image:
-      "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=500&h=400&fit=crop",
+    image: image.pro_kit,
     specs: [
       [""],
       [""],
@@ -27,8 +27,7 @@ const products = [
     subtitle: "Edition",
     description:
       "Empower your students to dive into circular geometry with our hands-on kit and engaging tutorials. Foster a deep understanding of circular concepts and inspire learning. Let's embark on this educational adventure together.",
-    image:
-      "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=500&h=400&fit=crop",
+    image: image.circle,
     specs: [
       ["Primary Circle - 1",
          "Secondary Large Circle - 1",
@@ -52,8 +51,7 @@ const products = [
     subtitle: "Edition",
     description:
       "Your Guide to Line Geometry. Explore the world of lines through hands-on activities and engaging tutorials. Master the essentials of geometry today.",
-    image:
-      "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?w=500&h=400&fit=crop",
+    image: image.basic,
     specs: [
       [
         "Strips - 10",
@@ -72,8 +70,7 @@ const products = [
     subtitle: "(Student Edition)",
     description:
       "The Ultimate Geometry Experience for Students! GeoMagic Mini is an engaging kit that brings geometry to life with hands-on activities and critical thinking challenges. Unleash the magic of geometry with us.",
-    image:
-      "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=500&h=400&fit=crop",
+    image: image.mini,
     specs: [
       [""],
       [""],
@@ -86,8 +83,7 @@ const products = [
     subtitle: "Edition Mini",
     description:
       "Explore circular geometry like never before with GeoMagic Mini! Our hands-on kit and captivating tutorials are your ticket to mastering circular concepts. Prepare to set sail on an exciting educational journey that will ignite your passion for learning.",
-    image:
-      "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=500&h=400&fit=crop",
+    image: image.circle_mini,
     specs: [
       [
         "Primary Circle - 1",
@@ -112,8 +108,7 @@ const products = [
     subtitle: "Edition Mini",
     description:
       "Your Path to Line Geometry Mastery! Delve into the fascinating realm of lines with our interactive activities and engaging tutorials. This is your chance to become a geometry expert. Begin your geometric journey now!",
-    image:
-      "https://images.unsplash.com/photo-1607706189992-eae578626c86?w=500&h=400&fit=crop",
+    image: image.basic_mini,
     specs: [
       ["Strips - 10",
          "Protractor - 10",
@@ -335,7 +330,7 @@ function ProductCard({ product, index }) {
           {/* Product image */}
           <div className="relative z-30 h-full flex items-center justify-center">
             <img
-              className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain rounded-lg shadow-lg"
+              className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain"
               alt={product.name}
               src={product.image}
             />
@@ -363,7 +358,7 @@ function ProductCard({ product, index }) {
           </div>
 
           {/* Main description */}
-          <div className="my-6 lg:my-8 xl:my-12">
+          <div className="mt-8 mb-6 lg:mt-12 xl:mt-16">
             <p className="text-black text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium leading-relaxed text-justify lg:text-left xl:text-justify font-['Nunito_Sans'] max-w-2xl lg:max-w-none opacity-90">
               {product.description}
             </p>

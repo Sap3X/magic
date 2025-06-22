@@ -1,7 +1,6 @@
 import React from "react";
 import ProductShowcase from "./components/Comp";
 import Bg from "./asset/hero_section.webp";
-import ImageCarousel from "./components/Images";
 import Image from "./components/Circular";
 import Logo from "./asset/Geomagic-Logo.png";
 import TeamSection from "./components/Testimonial";
@@ -142,7 +141,8 @@ export default function Magic() {
           <div className="w-full max-w-3xl aspect-video rounded-2xl overflow-hidden shadow-lg bg-black">
             <video
               src="/videos/haha.mp4"
-              controls loop 
+              controls
+              loop
               className="w-full h-full object-cover"
               // poster="/videos/geomagic-poster.jpg"
             >
@@ -167,11 +167,14 @@ export default function Magic() {
           {/* Icons container */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 lg:gap-8 w-full max-w-6xl mb-4 md:mb-6 text-center">
             <div className="flex justify-center flex-col items-center">
-              <img
-                src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Nyc055gPs1/1b7g2yvi_expires_30_days.png"
-                alt="Experiential Hands On"
-                className="w-20 h-20 md:w-32 md:h-32 lg:w-36 lg:h-36 object-cover"
-              />
+              <div
+                className="w-20 h-20 m-2 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-full bg-slate-200"
+                style={{
+                  boxShadow: "0px 3px 5px grey",
+                }}
+              >
+                <img src={image.icon_1} className="p-4 md:p-8" alt="Experiential Hands On" />
+              </div>
               <span className="text-black text-sm md:text-lg lg:text-xl font-medium leading-tight">
                 Experiential
                 <br />
@@ -180,22 +183,28 @@ export default function Magic() {
               <span></span>
             </div>
             <div className="flex justify-center flex-col items-center">
-              <img
-                src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Nyc055gPs1/pxoes96x_expires_30_days.png"
-                alt="Fun & Engaging"
-                className="w-20 h-20 md:w-32 md:h-32 lg:w-36 lg:h-36 object-cover"
-              />
+              <div
+                className="w-20 h-20 m-2 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-full bg-slate-200"
+                style={{
+                  boxShadow: "0px 3px 5px grey",
+                }}
+              >
+                <img src={image.icon_2} className="p-4 md:p-8" alt="Fun & Engaging" />
+              </div>
               <span className="text-black text-sm md:text-lg lg:text-xl font-medium leading-tight">
                 Fun &<br />
                 Engaging
               </span>
             </div>
             <div className="flex justify-center flex-col items-center">
-              <img
-                src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Nyc055gPs1/wt52qs7t_expires_30_days.png"
-                alt="Self Directed Learning"
-                className="w-20 h-20 md:w-32 md:h-32 lg:w-36 lg:h-36 object-cover"
-              />
+              <div
+                className="w-20 h-20 m-2 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-full bg-slate-200"
+                style={{
+                  boxShadow: "0px 3px 5px grey",
+                }}
+              >
+                <img src={image.icon_3} className="p-4 md:p-8" alt="Self Directed" />
+              </div>
               <span className="text-black text-sm md:text-lg lg:text-xl font-medium leading-tight">
                 Self Directed
                 <br />
@@ -203,11 +212,14 @@ export default function Magic() {
               </span>
             </div>
             <div className="flex justify-center flex-col items-center">
-              <img
-                src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Nyc055gPs1/wqbx092j_expires_30_days.png"
-                alt="Curriculum Integrated"
-                className="w-20 h-20 md:w-32 md:h-32 lg:w-36 lg:h-36 object-cover"
-              />
+              <div
+                className="w-20 h-20 m-2 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-full bg-slate-200"
+                style={{
+                  boxShadow: "0px 3px 5px grey",
+                }}
+              >
+                <img src={image.icon_4} className="p-4 md:p-8" alt="Curriculum Integrated"/>
+              </div>
               <span className="text-black text-sm md:text-lg lg:text-xl font-medium leading-tight">
                 Curriculum
                 <br />
@@ -215,16 +227,14 @@ export default function Magic() {
               </span>
             </div>
             <div className="flex items-center flex-col col-span-2 md:col-span-1">
-              <div className="w-20 h-20 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-full bg-slate-200" style={{
-                boxShadow: "0px 3px 5px grey",
-              }}>
-                <img src={image.icon_5} className="p-2" alt="500+ icon"/>
+              <div
+                className="w-20 h-20 m-2 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-full bg-slate-200"
+                style={{
+                  boxShadow: "0px 3px 5px grey",
+                }}
+              >
+                <img src={image.icon_5} className="p-2" alt="500+ Geometry"/>
               </div>
-              {/* <img
-                src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Nyc055gPs1/egne4ix8_expires_30_days.png"
-                alt="500+ Geometry Concepts"
-                className="w-20 h-20 md:w-32 md:h-32 lg:w-36 lg:h-36 object-cover"
-              /> */}
               <span className="text-black text-sm md:text-lg lg:text-xl font-medium leading-tight">
                 500+ Geometry
                 <br />
@@ -235,21 +245,7 @@ export default function Magic() {
         </div>
         {/* Product Contain */}
         <ProductShowcase />
-        {/* <div className="relative text-center mt-10"> */}
-        {/* Bulb gradient overlay */}
-        {/* <div
-    className="absolute left-1/2 top-0 -translate-x-1/2 z-0 pointer-events-none"
-    style={{
-      width: "100vw",
-      height: "100vh",
-      background: "radial-gradient(ellipse at center top, #fde047 0%, #22c55e 40%, transparent 60%)",
-      opacity: 0.7,
-      // filter: "blur(8px)",
-    }}
-  /> */}
-        {/* <span className="relative z-10  md:text-3xl">Sweet Moments</span> */}
-
-        {/* </div> */}
+        {/* { Gallery Section } */}
         <Image />
         {/* <TestimonialCarousel/> */}
         <TeamSection />

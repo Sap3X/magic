@@ -1,5 +1,9 @@
 const image = {
 
+    icon_1 : require('./asset/icon_1.png'),
+    icon_2 : require('./asset/icon_2.png'),
+    icon_3 : require('./asset/icon_3.png'),
+    icon_4 : require('./asset/icon_4.png'),
     icon_5 : require('./asset/icon_5.png'),
 
     pro_kit : require('./asset/Geomagic_Pro_Kit.webp'),

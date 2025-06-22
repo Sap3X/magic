@@ -38,11 +38,10 @@ const TeamSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            OUR TEAM
+            Experiences with Geomagic
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-            labore et dolore magna aliqua. Ut enim ad minim veniam.
+            Find out how Geomagic is changing math for the better. Learn from the teachers and learners who have experienced engaging, hands-on, meaningful interaction with math through Geomagic's approach.
           </p>
         </div>
 

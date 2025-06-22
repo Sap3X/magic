@@ -285,6 +285,7 @@ class App {
     document.documentElement.classList.remove('no-js')
     this.container = container
     this.scroll = { ease: 0.05, current: 0, target: 0, last: 0 }
+    // this.autoScroll = { speed: 0.1 }
     this.onCheckDebounce = debounce(this.onCheck, 200)
     this.createRenderer()
     this.createCamera()
@@ -397,6 +398,11 @@ class App {
     }
   }
   update() {
+    // automatic scrolling
+    // if (!this.isDown) {
+    //   this.scroll.target += this.autoScroll.speed
+    // }
+
     this.scroll.current = lerp(
       this.scroll.current,
       this.scroll.target,
