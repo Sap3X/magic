@@ -1,14 +1,5 @@
 import { useRef, useEffect } from 'react';
-import img1 from '../asset/gallery_1.webp';
-import img2 from '../asset/gallery_2.webp';
-import img3 from '../asset/gallery_3.webp';
-import img4 from '../asset/gallery_4.webp';
-import img5 from '../asset/gallery_5.webp';
-import img6 from '../asset/gallery_6.webp';
-import img7 from '../asset/gallery_7.webp';
-import img8 from '../asset/gallery_8.webp';
-import img9 from '../asset/gallery_9.webp';
-import img10 from '../asset/gallery_10.webp';
+import image from '../Images';
 import {
   Renderer,
   Camera,
@@ -326,16 +317,16 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: img1, text: '' },
-      { image: img2, text: '' },
-      { image: img3, text: '' },
-      { image: img4, text: '' },
-      { image: img5, text: '' },
-      { image: img6, text: '' },
-      { image: img7, text: '' },
-      { image: img8, text: '' },
-      { image: img9, text: '' },
-      { image: img10, text: '' }
+      { image: image.img1, text: '' },
+      { image: image.img2, text: '' },
+      { image: image.img3, text: '' },
+      { image: image.img4, text: '' },
+      { image: image.img5, text: '' },
+      { image: image.img6, text: '' },
+      { image: image.img7, text: '' },
+      { image: image.img8, text: '' },
+      { image: image.img9, text: '' },
+      { image: image.img10, text: '' }
       // { image: img, text: '' },
       // { image: img, text: "" }
     ]
