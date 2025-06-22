@@ -5,15 +5,16 @@ import ImageCarousel from "./components/Images";
 import Image from "./components/Circular";
 import Logo from "./asset/Geomagic-Logo.png";
 import TeamSection from "./components/Testimonial";
+import image from "./Images";
 
 export default function Magic() {
   return (
     <>
       <div className="min-h-screen">
         <div className="min-h-screen relative overflow-hidden">
-          {/* Desktop View - Original Design */}
+          {/* Desktop View */}
           <div className="hidden md:block">
-            {/* Background with dark forest overlay */}
+            {/* Background with dark overlay */}
             <div
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{
@@ -72,7 +73,7 @@ export default function Magic() {
             </div>
           </div>
 
-          {/* Mobile View - New Design */}
+          {/* Mobile View */}
           <div className="block md:hidden">
             {/* Hero Image Section */}
             <div className="relative h-[60vh] overflow-hidden">
@@ -131,48 +132,24 @@ export default function Magic() {
                   Fun. Simple. <span className="text-yellow-300">Magical.</span>
                 </p>
               </div>
-
-              {/* Decorative elements */}
-              {/* <div className="absolute top-10 left-6 w-2 h-2 bg-yellow-400/40 rounded-full blur-sm animate-pulse"></div>
-          <div className="absolute top-20 right-8 w-1 h-1 bg-purple-300/50 rounded-full blur-sm animate-pulse delay-1000"></div>
-          <div className="absolute bottom-20 left-4 w-3 h-3 bg-indigo-400/30 rounded-full blur-sm animate-pulse delay-500"></div>
-          <div className="absolute bottom-10 right-6 w-1 h-1 bg-yellow-300/40 rounded-full blur-sm animate-pulse delay-1500"></div> */}
             </div>
           </div>
         </div>
-        {/* <div className="flex justify-center ">
-          <div
-            className="flex items-center bg-[#D9D9D9] my-16 mx-16 max-w-[1200px] rounded-[59px]"
-            style={{
-              boxShadow: "0px 4px 4px #00000040",
-            }}
-          >
-            <BiChevronLeft className="w-32 h-auto ml-4" />
-
-            <div className="flex flex-col items-center justify-center relative py-6 md:py-24">
-              <img
-                src={
-                  "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Nyc055gPs1/sam8rkyw_expires_30_days.png"
-                }
-                className="w-2/3 h-auto object-fill z-10"
-              />
-              <img
-                src={
-                  "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Nyc055gPs1/g7m8ir2h_expires_30_days.png"
-                }
-                className="w-[30%] h-auto absolute  object-fill right-8"
-              />
-              <img
-                src={
-                  "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Nyc055gPs1/vaspk95y_expires_30_days.png"
-                }
-                className="w-[30%] h-auto absolute  object-fill left-8"
-              />
-            </div>
-            <BiChevronRight className="w-32 h-auto mr-4" />
+        <div className="flex flex-col items-center justify-center my-12 px-4 md:px-8">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6 text-black">
+            Watch GeoMagic in Action
+          </h2>
+          <div className="w-full max-w-3xl aspect-video rounded-2xl overflow-hidden shadow-lg bg-black">
+            <video
+              src="/videos/haha.mp4"
+              controls loop 
+              className="w-full h-full object-cover"
+              // poster="/videos/geomagic-poster.jpg"
+            >
+              Sorry, your browser doesn't support embedded videos.
+            </video>
           </div>
-        </div> */}
-        <ImageCarousel />
+        </div>
         {/* The section below is the "Why Geomagic?" section */}
         <div className="flex flex-col items-center mb-16 px-4 md:px-8 lg:px-16 pt-6">
           {/* Main heading */}
@@ -238,11 +215,16 @@ export default function Magic() {
               </span>
             </div>
             <div className="flex items-center flex-col col-span-2 md:col-span-1">
-              <img
+              <div className="w-20 h-20 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-full bg-slate-200" style={{
+                boxShadow: "0px 3px 5px grey",
+              }}>
+                <img src={image.icon_5} className="p-2" alt="500+ icon"/>
+              </div>
+              {/* <img
                 src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Nyc055gPs1/egne4ix8_expires_30_days.png"
                 alt="500+ Geometry Concepts"
                 className="w-20 h-20 md:w-32 md:h-32 lg:w-36 lg:h-36 object-cover"
-              />
+              /> */}
               <span className="text-black text-sm md:text-lg lg:text-xl font-medium leading-tight">
                 500+ Geometry
                 <br />
@@ -254,8 +236,8 @@ export default function Magic() {
         {/* Product Contain */}
         <ProductShowcase />
         {/* <div className="relative text-center mt-10"> */}
-  {/* Bulb gradient overlay */}
-  {/* <div
+        {/* Bulb gradient overlay */}
+        {/* <div
     className="absolute left-1/2 top-0 -translate-x-1/2 z-0 pointer-events-none"
     style={{
       width: "100vw",
@@ -265,10 +247,10 @@ export default function Magic() {
       // filter: "blur(8px)",
     }}
   /> */}
-  {/* <span className="relative z-10  md:text-3xl">Sweet Moments</span> */}
- 
-{/* </div> */}
- <Image />
+        {/* <span className="relative z-10  md:text-3xl">Sweet Moments</span> */}
+
+        {/* </div> */}
+        <Image />
         {/* <TestimonialCarousel/> */}
         <TeamSection />
       </div>
