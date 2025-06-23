@@ -347,7 +347,7 @@ function ProductCard({ product, index }) {
         </div>
 
         {/* Content side */}
-        <div className="flex-1 relative p-4 sm:p-6 lg:p-8 xl:p-12 flex flex-col justify-center z-30">
+        <div className="flex-1 relative px-4 pb-4 sm:p-6 lg:p-8 xl:p-12 flex flex-col justify-center z-30">
           {/* Product title with improved yellow background */}
           <div className="mt-6 lg:mt-8 xl:mt-10 relative flex flex-col justify-center items-center">
             {/* Yellow background image as a banner - improved positioning and sizing */}

@@ -6,8 +6,7 @@ import Logo from "./asset/Geomagic-Logo.png";
 import TeamSection from "./components/Testimonial";
 import image from "./Images";
 import haha from  "./asset/hero.webp"
-import cir from "./asset/shape1.webp"
-import ha from './asset/some.webp'
+
 
 export default function Magic() {
   return (
@@ -144,10 +143,10 @@ export default function Magic() {
           <div className="relative w-full max-w-3xl aspect-video rounded-2xl shadow-lg bg-black overflow-visible">
   
             <div className="absolute -top-2 -left-4 md:-top-8 md:-left-8 w-16 h-16 md:w-24 md:h-24">
-                <img src={cir} className="w-full h-full rotate-12"></img>
+                <img src={image.vid_shape} className="w-full h-full rotate-12"></img>
               </div>
-              <div className="absolute z-10 -bottom-2 -right-4 md:-bottom-8 md:-right-8 w-12 h-12 md:w-24 md:h-24">
-                <img src={cir} className="w-full h-full rotate-[24deg]"></img>
+              <div className="absolute z-10 -bottom-2 -right-2 md:-bottom-8 md:-right-8 w-12 h-12 md:w-24 md:h-24">
+                <img src={image.vid_shape} className="w-full h-full rotate-[24deg]"></img>
               </div>
             <video
               src="/videos/haha.mp4"

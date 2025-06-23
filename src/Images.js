@@ -1,5 +1,7 @@
 const image = {
 
+    vid_shape : require('./asset/circle.webp'),
+
     icon_1 : require('./asset/icon_1.png'),
     icon_2 : require('./asset/icon_2.png'),
     icon_3 : require('./asset/icon_3.png'),
