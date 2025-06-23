@@ -5,6 +5,9 @@ import Image from "./components/Circular";
 import Logo from "./asset/Geomagic-Logo.png";
 import TeamSection from "./components/Testimonial";
 import image from "./Images";
+import haha from  "./asset/hero.webp"
+import cir from "./asset/shape1.webp"
+import ha from './asset/some.webp'
 
 export default function Magic() {
   return (
@@ -138,12 +141,19 @@ export default function Magic() {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6 text-black">
             Watch GeoMagic in Action
           </h2>
-          <div className="w-full max-w-3xl aspect-video rounded-2xl overflow-hidden shadow-lg bg-black">
+          <div className="relative w-full max-w-3xl aspect-video rounded-2xl shadow-lg bg-black overflow-visible">
+  
+            <div className="absolute -top-2 -left-4 md:-top-8 md:-left-8 w-16 h-16 md:w-24 md:h-24">
+                <img src={cir} className="w-full h-full rotate-12"></img>
+              </div>
+              <div className="absolute z-10 -bottom-2 -right-4 md:-bottom-8 md:-right-8 w-12 h-12 md:w-24 md:h-24">
+                <img src={cir} className="w-full h-full rotate-[24deg]"></img>
+              </div>
             <video
               src="/videos/haha.mp4"
               controls
               loop
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-2xl"
               // poster="/videos/geomagic-poster.jpg"
             >
               Sorry, your browser doesn't support embedded videos.
@@ -249,6 +259,54 @@ export default function Magic() {
         <Image />
         {/* <TestimonialCarousel/> */}
         <TeamSection />
+       <div className="w-full max-w-7xl mx-auto p-4 md:p-6">
+      <div className="relative bg-gradient-to-r from-green-600 via-green-400 to-yellow-500 rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
+        {/* Background geometric shapes */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-4 right-8 md:top-8 md:right-16 w-16 h-16 md:w-32 md:h-32 border-4 border-yellow-400 rotate-45 opacity-30"></div>
+          <div className="absolute bottom-4 left-8 md:bottom-8 md:left-16 w-12 h-12 md:w-24 md:h-24 border-3 border-orange-400 rotate-12 opacity-40"></div>
+          <div className="absolute top-1/2 left-1/4 w-8 h-8 md:w-16 md:h-16 bg-red-400 rounded-full opacity-20"></div>
+        </div>
+        
+        <div className="relative flex flex-col md:flex-row items-center justify-between p-6 md:p-12 lg:p-16">
+          {/* Left content */}
+          <div className="flex-1 text-white mb-6 md:mb-0 md:pr-8 text-center md:text-left">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-6 leading-tight">
+              Curious how GeoMagic works?
+            </h1>
+            <p className="text-sm md:text-lg lg:text-xl mb-6 md:mb-8 opacity-90 leading-relaxed max-w-md md:max-w-lg">
+              See it in action and uncover the clever ways it brings geometry to life.
+              <br className="hidden md:block" />
+              Discover how fun—and surprising—geometry can be!
+            </p>
+            <button className="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-6 py-3 md:px-8 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-sm md:text-base">
+              <span className="flex items-center justify-center">
+                Order Now
+              </span>
+            </button>
+          </div>
+          
+          {/* Right image section */}
+          <div className="flex-1 relative max-w-sm md:max-w-md lg:max-w-lg">
+            <div className="relative bg-white bg-opacity-10 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 shadow-xl">
+              {/* Geometric overlay elements */}
+              <div className="absolute -top-2 -right-2 md:-top-4 md:-right-4 w-16 h-16 md:w-24 md:h-24">
+                <div className="w-full h-full border-4 border-yellow-400 rotate-45"></div>
+              </div>
+              <div className="absolute -bottom-2 -left-2 md:-bottom-4 md:-left-4 w-12 h-12 md:w-16 md:h-16">
+                <div className="w-full h-full bg-orange-400 rounded-full opacity-80"></div>
+              </div>
+              
+              <img src={haha} className="rounded-xl"/>
+            </div>
+          </div>
+        </div>
+        
+        {/* Additional decorative elements */}
+        <div className="absolute top-1/4 right-1/4 w-2 h-2 md:w-4 md:h-4 bg-yellow-400 rounded-full opacity-60"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-1 h-8 md:w-2 md:h-16 bg-orange-400 rounded-full opacity-50 transform rotate-45"></div>
+      </div>
+    </div>
       </div>
     </>
   );

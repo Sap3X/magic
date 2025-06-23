@@ -250,19 +250,22 @@ const productShapePositions = [
       rotation: "10deg",
     },
     {
+      //pie
       shapeIndex: 1,
       position:
-        "bottom-8 left-8 sm:bottom-10 sm:left-10 lg:bottom-12 lg:left-12",
+        "bottom-8 left-8 sm:bottom-10 sm:left-1/3 lg:bottom-12 lg:left-12",
       rotation: "-45deg",
     },
     {
+      //triangle
       shapeIndex: 2,
-      position: "top-2/5 right-1/4 sm:right-1/3 lg:right-1/4",
+      position: "top-2/5 right-1/4 sm:top-1/2 sm:right-1/2 lg:right-1/4",
       rotation: "35deg",
     },
     {
+      //c-shape
       shapeIndex: 3,
-      position: "bottom-1/5 right-12 sm:right-16 lg:right-20",
+      position: "bottom-1/5 right-12 sm:bottom-36 sm:right-16 lg:right-20",
       rotation: "0deg",
     },
   ],
@@ -298,6 +301,8 @@ const productShapePositions = [
 
 function ProductCard({ product, index }) {
   const isEven = index % 2 === 0;
+  const numbfour = index === 4;
+  const numbfive = index === 5;
   const shapePositions = productShapePositions[index] || [];
 
   return (
@@ -325,16 +330,16 @@ function ProductCard({ product, index }) {
         }`}
       >
         {/* Product image side */}
-        <div className="flex-1 relative p-4 sm:p-6 lg:p-8 xl:p-12">
+        <div className="flex-1 relative px-4 pt-4 sm:p-6 lg:p-8 xl:p-12">
           {/* Background gradient for product */}
           <div
-            className={`absolute inset-4 sm:inset-6 lg:inset-8 xl:inset-12 bg-gradient-to-r ${product.gradient} rounded-2xl xl:rounded-[30px] opacity-90 z-20`}
+            className={`absolute h-2/3 my-auto w-2/3 mx-auto inset-4 sm:inset-6 lg:inset-8 bg-gradient-to-r ${product.gradient} rounded-2xl xl:rounded-[30px] opacity-90 z-20`}
           />
 
           {/* Product image */}
           <div className="relative z-30 h-full flex items-center justify-center">
             <img
-              className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain"
+              className={`w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain ${ numbfour ? "rotate-12" : ""  } ${ numbfive ? "rotate-12" : "" }`}
               alt={product.name}
               src={product.image}
             />
@@ -362,19 +367,19 @@ function ProductCard({ product, index }) {
           </div>
 
           {/* Main description */}
-          <div className="mt-8 mb-6 lg:mt-12 xl:mt-16">
+          <div className="mt-8 mx-auto mb-6 lg:mt-12 xl:mt-16">
             <p className="text-black text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium leading-relaxed text-justify lg:text-left xl:text-justify font-['Nunito_Sans'] max-w-2xl lg:max-w-none opacity-90">
               {product.description}
             </p>
           </div>
 
           {/* Product specifications */}
-          <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-8 xl:gap-12">
+          <div className="grid grid-cols-2 gap-11 sm:gap-6 lg:gap-8 xl:gap-12">
             <div className="space-y-1 sm:space-y-2">
               {product.specs[0].map((spec, idx) => (
                 <p
                   key={idx}
-                  className="text-black text-sm sm:text-base md:text-lg font-medium leading-relaxed text-center sm:text-left font-['Nunito_Sans']"
+                  className="text-black text-xs sm:text-base md:text-lg font-medium leading-relaxed text-left font-['Nunito_Sans']"
                 >
                   {spec}
                 </p>
@@ -385,7 +390,7 @@ function ProductCard({ product, index }) {
               {product.specs[1].map((spec, idx) => (
                 <p
                   key={idx}
-                  className="text-black text-sm sm:text-base md:text-lg font-medium leading-relaxed text-center sm:text-left font-['Nunito_Sans']"
+                  className="text-black text-xs sm:text-base md:text-lg font-medium leading-relaxed text-left font-['Nunito_Sans']"
                 >
                   {spec}
                 </p>
