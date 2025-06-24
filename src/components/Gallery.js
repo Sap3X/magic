@@ -284,7 +284,7 @@ class App {
   constructor(container, { items, bend, textColor = "#ffffff", borderRadius = 0, font = "bold 30px Figtree" } = {}) {
     document.documentElement.classList.remove('no-js')
     this.container = container
-    this.scroll = { ease: 0.05, current: 0, target: 0, last: 0 }
+    this.scroll = { ease: 0.01, current: 0, target: 0, last: 0 }
     // this.autoScroll = { speed: 0.1 }
     this.onCheckDebounce = debounce(this.onCheck, 200)
     this.createRenderer()

@@ -5,6 +5,7 @@ import Circle2 from "../asset/ellipse-6.png";
 import Poly from "../asset/polygon-5.png";
 import Yellow_Bg from "../asset/9833793-27047-picsart-backgroundremover-1.png";
 import image from  "../Images";
+import '../index.css';
 
 // Sample product data
 const products = [
@@ -152,22 +153,22 @@ const productShapePositions = [
   [
     {
       shapeIndex: 0,
-      position: "top-4 right-4 sm:top-8 sm:right-8 lg:top-12 lg:right-12",
+      position: "top-4 right-4 ",
       rotation: "15deg",
     },
     {
       shapeIndex: 1,
-      position: "bottom-6 left-4 sm:bottom-8 sm:left-6 lg:bottom-12 lg:left-8",
+      position: "bottom-6 left-4 ",
       rotation: "0deg",
     },
     {
       shapeIndex: 2,
-      position: "top-1/3 right-1/4 sm:top-1/2 sm:right-1/3 lg:right-1/2",
+      position: "top-1/3 right-1/2 ",
       rotation: "-20deg",
     },
     {
       shapeIndex: 3,
-      position: "bottom-1/4 right-8 sm:right-12 lg:right-16",
+      position: "bottom-[10%] right-8 ",
       rotation: "45deg",
     },
   ],
@@ -175,23 +176,22 @@ const productShapePositions = [
   [
     {
       shapeIndex: 0,
-      position: "top-4 left-4 sm:top-8 sm:left-8 lg:top-12 lg:left-12",
+      position: "top-4 left-4 ",
       rotation: "-15deg",
     },
     {
       shapeIndex: 1,
-      position:
-        "bottom-6 right-4 sm:bottom-8 sm:right-6 lg:bottom-12 lg:right-8",
+      position: "bottom-6 right-4 ",
       rotation: "30deg",
     },
     {
       shapeIndex: 2,
-      position: "top-1/3 left-1/4 sm:left-1/3 lg:left-1/4",
+      position: "top-1/3 left-1/2 ",
       rotation: "20deg",
     },
     {
       shapeIndex: 3,
-      position: "bottom-1/4 left-8 sm:left-12 lg:left-16",
+      position: "bottom-1/4 left-[25%] ",
       rotation: "-45deg",
     },
   ],
@@ -199,22 +199,22 @@ const productShapePositions = [
   [
     {
       shapeIndex: 0,
-      position: "top-6 right-6 sm:top-10 sm:right-10 lg:top-14 lg:right-14",
+      position: "top-6 right-6 ",
       rotation: "25deg",
     },
     {
       shapeIndex: 1,
-      position: "bottom-4 left-6 sm:bottom-6 sm:left-8 lg:bottom-8 lg:left-10",
+      position: "bottom-4 left-6 ",
       rotation: "0deg",
     },
     {
       shapeIndex: 2,
-      position: "top-1/2 right-1/3 sm:right-2/5 lg:right-1/3",
+      position: "top-1/2 right-1/2 ",
       rotation: "-30deg",
     },
     {
       shapeIndex: 3,
-      position: "bottom-1/3 right-4 sm:right-8 lg:right-12",
+      position: "bottom-36 right-4 ",
       rotation: "60deg",
     },
   ],
@@ -222,23 +222,23 @@ const productShapePositions = [
   [
     {
       shapeIndex: 0,
-      position: "top-6 left-6 sm:top-10 sm:left-10 lg:top-14 lg:left-14",
+      position: "top-6 left-6 ",
       rotation: "-25deg",
     },
     {
       shapeIndex: 1,
       position:
-        "bottom-4 right-6 sm:bottom-6 sm:right-8 lg:bottom-8 lg:right-10",
+        "bottom-4 right-6 ",
       rotation: "15deg",
     },
     {
       shapeIndex: 2,
-      position: "top-1/2 left-1/3 sm:left-2/5 lg:left-1/3",
+      position: "top-3/4 left-[20%] ",
       rotation: "30deg",
     },
     {
       shapeIndex: 3,
-      position: "bottom-1/3 left-4 sm:left-8 lg:left-12",
+      position: "bottom-1/3 left-1/2 ",
       rotation: "-60deg",
     },
   ],
@@ -246,54 +246,53 @@ const productShapePositions = [
   [
     {
       shapeIndex: 0,
-      position: "top-8 right-8 sm:top-12 sm:right-12 lg:top-16 lg:right-16",
+      position: "top-8 right-8 ",
       rotation: "10deg",
     },
     {
       //pie
       shapeIndex: 1,
       position:
-        "bottom-8 left-8 sm:bottom-10 sm:left-1/3 lg:bottom-12 lg:left-12",
+        "bottom-8 left-8 ",
       rotation: "-45deg",
     },
     {
-      //triangle
       shapeIndex: 2,
-      position: "top-2/5 right-1/4 sm:top-1/2 sm:right-1/2 lg:right-1/4",
+      position: "top-3/4 right-1/4 ",
       rotation: "35deg",
     },
     {
       //c-shape
       shapeIndex: 3,
-      position: "bottom-1/5 right-12 sm:bottom-36 sm:right-16 lg:right-20",
+      position: "top-9 right-3/4 ",
       rotation: "0deg",
     },
   ],
   // Product 6 (image right) - final variation
   [
     {
-      //star
-      shapeIndex: 0,
-      position: "bottom-8 left-1/2 sm:bottom-20 sm:left-1/3 lg:top-16 lg:left-16",
+      //pie
+      shapeIndex: 1,
+      position: "top-8 left-8 ",
       rotation: "-10deg",
     },
     {
       //c-shape
-      shapeIndex: 3,
+      shapeIndex: 0,
       position:
-        "bottom-1/2 right-8 sm:bottom-10 sm:right-14 lg:bottom-12 lg:right-10",
+        "bottom-1/2 right-8 ",
       rotation: "45deg",
     },
     {
       //triangle
-      shapeIndex: 2,
-      position: "top-2/3 left-1/2 sm:top:3/4 sm:left-3/4 lg:left-1/2",
+      shapeIndex: 3,
+      position: "top-[65%] left-1/2 ",
       rotation: "-35deg",
     },
     {
       //pie
-      shapeIndex: 1,
-      position: "bottom-1/2 left-12 sm:bottom-1/4 sm:left-16 lg:left-16",
+      shapeIndex: 2,
+      position: "bottom-10 left-12 ",
       rotation: "25deg",
     },
   ],
@@ -313,7 +312,7 @@ function ProductCard({ product, index }) {
         return (
           <img
             key={idx}
-            className={`absolute ${shapeConfig.position} ${shape.size} hidden sm:block object-contain z-10`}
+            className={`absolute ${shapeConfig.position} ${shape.size} hidden lg:block object-contain z-10`}
             style={{
               transform: `rotate(${shapeConfig.rotation})`,
             }}
@@ -330,7 +329,7 @@ function ProductCard({ product, index }) {
         }`}
       >
         {/* Product image side */}
-        <div className="flex-1 relative px-4 pt-4 sm:p-6 lg:p-8 xl:p-12">
+        <div className="flex-1 relative px-4 pt-4 sm:px-6 sm:pt-6 lg:p-8 xl:p-12">
           {/* Background gradient for product */}
           <div
             className={`absolute h-2/3 my-auto w-2/3 mx-auto inset-4 sm:inset-6 lg:inset-8 bg-gradient-to-r ${product.gradient} rounded-2xl xl:rounded-[30px] opacity-90 z-20`}
@@ -347,7 +346,7 @@ function ProductCard({ product, index }) {
         </div>
 
         {/* Content side */}
-        <div className="flex-1 relative px-4 pb-4 sm:p-6 lg:p-8 xl:p-12 flex flex-col justify-center z-30">
+        <div className="flex-1 relative px-4 pb-4 sm:px-6 sm:pb-6 lg:p-8 xl:p-12 flex flex-col justify-center z-30">
           {/* Product title with improved yellow background */}
           <div className="mt-6 lg:mt-8 xl:mt-10 relative flex flex-col justify-center items-center">
             {/* Yellow background image as a banner - improved positioning and sizing */}
@@ -356,8 +355,8 @@ function ProductCard({ product, index }) {
               alt="background banner"
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[280px] md:max-w-[325px] lg:max-w-[800px] xl:max-w-[900px] h-auto min-h-[80px] sm:min-h-[100px] md:min-h-[120px] lg:min-h-[140px] xl:min-h-[160px] object-cover z-[-1]"
             />
-            <div className="relative z-10  px-4 sm:px-6 md:px-8 lg:px-12">
-              <h2 className="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center font-['Nunito_Sans'] leading-tight ">
+            <div className="relative z-10  px-4 sm:px-6 md:px-8 lg:px-8">
+              <h2 className="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center font-mont leading-tight ">
                 {product.name}
               </h2>
               <h3 className="text-black text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-center font-['Nunito_Sans'] opacity-80 leading-tight">
@@ -368,7 +367,7 @@ function ProductCard({ product, index }) {
 
           {/* Main description */}
           <div className="mt-8 mx-auto mb-6 lg:mt-12 xl:mt-16">
-            <p className="text-black text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium leading-relaxed text-justify lg:text-left xl:text-justify font-['Nunito_Sans'] max-w-2xl lg:max-w-none opacity-90">
+            <p className="text-black text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium leading-relaxed text-justify lg:text-left xl:text-justify font-nunito max-w-2xl lg:max-w-none opacity-90">
               {product.description}
             </p>
           </div>
@@ -379,7 +378,7 @@ function ProductCard({ product, index }) {
               {product.specs[0].map((spec, idx) => (
                 <p
                   key={idx}
-                  className="text-black text-xs sm:text-base md:text-lg font-medium leading-relaxed text-left font-['Nunito_Sans']"
+                  className="text-black text-xs sm:text-base md:text-base font-medium leading-relaxed text-left font-['Nunito_Sans']"
                 >
                   {spec}
                 </p>
@@ -390,7 +389,7 @@ function ProductCard({ product, index }) {
               {product.specs[1].map((spec, idx) => (
                 <p
                   key={idx}
-                  className="text-black text-xs sm:text-base md:text-lg font-medium leading-relaxed text-left font-['Nunito_Sans']"
+                  className="text-black text-xs sm:text-base md:text-base font-medium leading-relaxed text-left font-['Nunito_Sans']"
                 >
                   {spec}
                 </p>

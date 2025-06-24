@@ -145,14 +145,14 @@ export default function Magic() {
             <div className="absolute -top-2 -left-4 md:-top-8 md:-left-8 w-16 h-16 md:w-24 md:h-24">
                 <img src={image.vid_shape} className="w-full h-full rotate-12"></img>
               </div>
-              <div className="absolute z-10 -bottom-2 -right-2 md:-bottom-8 md:-right-8 w-12 h-12 md:w-24 md:h-24">
+              <div className="absolute z-10 -bottom-2 -right-2 md:-bottom-4 md:-right-4 lg:-bottom-8 lg:-right-8 w-12 h-12 md:w-24 md:h-24">
                 <img src={image.vid_shape} className="w-full h-full rotate-[24deg]"></img>
               </div>
             <video
               src="/videos/haha.mp4"
               controls
               loop
-              className="w-full h-full object-cover rounded-2xl"
+              className="w-full h-full object-cover rounded-2xl "
               // poster="/videos/geomagic-poster.jpg"
             >
               Sorry, your browser doesn't support embedded videos.

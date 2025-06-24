@@ -1,6 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Buenard:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root{
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: "Buenard", serif;
+  --tertiary-font: "Nunito Sans", sans-serif;
+}
 
 body {
   margin: 0;
@@ -14,6 +21,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.Utility-font-Montserrat{
+    font-family: var(--main-font) !important;
+}
+
+.Utility-font-Buenard{
+    font-family: var(--secondary-font) !important;
+}
+
+.Utility-font-NunitoSans{
+    font-family: var(--tertiary-font) !important;
 }
 
 @layer components {
