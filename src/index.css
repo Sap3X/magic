@@ -18,23 +18,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.Utility-font-Montserrat{
-    font-family: var(--main-font) !important;
-}
-
-.Utility-font-Buenard{
-    font-family: var(--secondary-font) !important;
-}
-
-.Utility-font-NunitoSans{
-    font-family: var(--tertiary-font) !important;
-}
-
 @layer components {
   .all-\[unset\] {
     all: unset;

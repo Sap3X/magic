@@ -5,13 +5,13 @@ import Image from "./components/Circular";
 import Logo from "./asset/Geomagic-Logo.png";
 import TeamSection from "./components/Testimonial";
 import image from "./Images";
-import haha from  "./asset/hero.webp"
-
+import './Animation.css';
+import AutoShow from "./aim";
 
 export default function Magic() {
   return (
     <>
-      <div className="min-h-screen">
+      <div className="">
         <div className="min-h-screen relative overflow-hidden">
           {/* Desktop View */}
           <div className="hidden md:block">
@@ -136,17 +136,18 @@ export default function Magic() {
             </div>
           </div>
         </div>
+        <AutoShow>
         <div className="flex flex-col items-center justify-center my-12 px-4 md:px-8">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6 text-black">
             Watch GeoMagic in Action
           </h2>
-          <div className="relative w-full max-w-3xl aspect-video rounded-2xl shadow-lg bg-black overflow-visible">
+          <div className="relative w-full max-w-3xl aspect-video rounded-2xl shadow-lg bg-black overflow-visible autoshow">
   
             <div className="absolute -top-2 -left-4 md:-top-8 md:-left-8 w-16 h-16 md:w-24 md:h-24">
-                <img src={image.vid_shape} className="w-full h-full rotate-12"></img>
+                <img src={image.vid_shape} alt="shapes" className="w-full h-full rotate-12"></img>
               </div>
-              <div className="absolute z-10 -bottom-2 -right-2 md:-bottom-4 md:-right-4 lg:-bottom-8 lg:-right-8 w-12 h-12 md:w-24 md:h-24">
-                <img src={image.vid_shape} className="w-full h-full rotate-[24deg]"></img>
+              <div className="absolute -bottom-2 -right-2 md:-bottom-4 md:-right-4 lg:-bottom-8 lg:-right-8 w-12 h-12 md:w-24 md:h-24">
+                <img src={image.vid_shape} alt="shapes" className="w-full h-full rotate-[24deg]"></img>
               </div>
             <video
               src="/videos/haha.mp4"
@@ -159,10 +160,12 @@ export default function Magic() {
             </video>
           </div>
         </div>
+        </AutoShow>
+        <AutoShow>
         {/* The section below is the "Why Geomagic?" section */}
-        <div className="flex flex-col items-center mb-16 px-4 md:px-8 lg:px-16 pt-6">
+        <div className="flex flex-col items-center mb-16 px-4 md:px-8 lg:px-16 pt-6 autoshow">
           {/* Main heading */}
-          <h1 className="text-black text-3xl md:text-4xl lg:text-6xl font-bold text-center max-w-md md:max-w-lg lg:max-w-xl mb-4 lg:mb-6">
+          <h1 className="text-black text-3xl md:text-4xl lg:text-6xl font-bold text-center max-w-md md:max-w-lg lg:max-w-xl mb-4 lg:mb-6 ">
             WHY GEOMAGIC?
           </h1>
 
@@ -252,13 +255,14 @@ export default function Magic() {
             </div>
           </div>
         </div>
+        </AutoShow>
         {/* Product Contain */}
         <ProductShowcase />
         {/* { Gallery Section } */}
         <Image />
         {/* <TestimonialCarousel/> */}
         <TeamSection />
-       <div className="w-full max-w-7xl mx-auto p-4 md:p-6">
+       <div className="w-full max-w-7xl mx-auto p-4 md:p-6 autoshow">
       <div className="relative bg-gradient-to-r from-green-600 via-green-400 to-yellow-500 rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
         {/* Background geometric shapes */}
         <div className="absolute inset-0 overflow-hidden">
@@ -296,7 +300,7 @@ export default function Magic() {
                 <div className="w-full h-full bg-orange-400 rounded-full opacity-80"></div>
               </div>
               
-              <img src={haha} className="rounded-xl"/>
+              <img src={image.contact} alt="contact us" className="rounded-xl"/>
             </div>
           </div>
         </div>

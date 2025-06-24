@@ -305,7 +305,7 @@ function ProductCard({ product, index }) {
   const shapePositions = productShapePositions[index] || [];
 
   return (
-    <div className="relative w-full bg-[#d9d9d9] rounded-3xl lg:rounded-[59px] shadow-lg overflow-hidden h-auto">
+    <div className="relative w-full bg-[#d9d9d9] rounded-3xl lg:rounded-[59px] shadow-lg overflow-hidden h-auto autoshow">
       {/* Decorative shapes with fixed positions */}
       {shapePositions.map((shapeConfig, idx) => {
         const shape = decorativeShapes[shapeConfig.shapeIndex];
@@ -367,13 +367,13 @@ function ProductCard({ product, index }) {
 
           {/* Main description */}
           <div className="mt-8 mx-auto mb-6 lg:mt-12 xl:mt-16">
-            <p className="text-black text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium leading-relaxed text-justify lg:text-left xl:text-justify font-nunito max-w-2xl lg:max-w-none opacity-90">
+            <p className="text-black text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium leading-relaxed text-justify lg:text-left xl:text-justify font-nunito lg:max-w-none opacity-90">
               {product.description}
             </p>
           </div>
 
           {/* Product specifications */}
-          <div className="grid grid-cols-2 gap-11 sm:gap-6 lg:gap-8 xl:gap-12">
+          <div className="grid grid-cols-2 gap-11  sm:gap-6 lg:gap-8 xl:gap-12">
             <div className="space-y-1 sm:space-y-2">
               {product.specs[0].map((spec, idx) => (
                 <p

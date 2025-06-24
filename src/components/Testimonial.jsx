@@ -86,7 +86,7 @@ const TeamSection = () => {
   };
 
   return (
-    <div className=" bg-gray-50 py-16 px-4">
+    <div className=" bg-gray-50 pt-8 px-4 autoshow">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">

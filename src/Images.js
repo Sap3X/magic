@@ -24,7 +24,9 @@ const image = {
     img7 : require('./asset/gallery_7.webp'),
     img8 : require('./asset/gallery_8.webp'),
     img9 : require('./asset/gallery_9.webp'),
-    img10 : require('./asset/gallery_10.webp')
+    img10 : require('./asset/gallery_10.webp'),
+
+    contact : require('./asset/contact.webp')
 
 }
 
