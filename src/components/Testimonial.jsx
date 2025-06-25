@@ -11,7 +11,7 @@ const TeamSection = () => {
       id: 1,
       name: "Anika R",
       position: "Class 9",
-      image: "AR",
+      image: "https://placehold.co/600x400?text=AR",
       description: "Geo-Magic altered my perspective on geometry! Lines and angles were just dull book illustrations prior to this. I now construct them and observe their operation. The video lessons are really simple to follow.",
       bgColor: "bg-blue-500",
       bgPosition: "left"
@@ -20,7 +20,7 @@ const TeamSection = () => {
       id: 2,
       name: "Rahil L",
       position: "Class 10",
-      image: "RL",
+      image: "https://placehold.co/600x400?text=RL",
       description: "Trigonometry has always been difficult for me, but the Geo-Magic kit made it easier for me to see it clearly. Learning became enjoyable thanks to the models, and the QR videos provided excellent explanations of each step. I heartily recommend this to anyone who struggles with maths!",
       bgColor: "bg-green-500",
       bgPosition: "center",
@@ -30,7 +30,7 @@ const TeamSection = () => {
       id: 3,
       name: "Sanya D",
       position: "Class 8",
-      image: "SD",
+      image: "https://placehold.co/600x400?text=SD",
       description: "My geometry homework was so much easier after using Geo-Magic! I enjoyed constructing the shapes and at last comprehending the concepts presented in the textbook. It's entertaining, imaginative, and it also helped me raise my grades!",
       bgColor: "bg-teal-500",
       bgPosition: "right"
@@ -88,7 +88,6 @@ const TeamSection = () => {
   return (
     <div className=" bg-gray-50 pt-8 px-4">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
             Experiences with Geomagic
@@ -136,9 +135,10 @@ const TeamSection = () => {
                       {/* Profile Image */}
                       <div className="flex justify-center mb-6">
                         <div className="relative">
-                          <p className="w-20 h-20 p-5 font-extrabold text-2xl text-center rounded-full border-4 border-slate-600 shadow-lg">
-                            {member.image}
-                          </p>
+                          <img 
+                          className="w-20 h-20 rounded-full border-4 border-slate-600 object-cover shadow-lg"
+                          src={member.image}
+                          alt=''/>
                           <div className={`absolute -top-2 -right-2 w-6 h-6 ${member.bgColor} rounded-full`}></div>
                         </div>
                       </div>
