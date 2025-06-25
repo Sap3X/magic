@@ -1,12 +1,8 @@
 import React from "react";
 import ProductShowcase from "./components/Comp";
-import Bg from "./asset/hero_section.webp";
 import Image from "./components/Circular";
-import Logo from "./asset/Geomagic-Logo.png";
 import TeamSection from "./components/Testimonial";
 import image from "./Images";
-import './Animation.css';
-import AutoShow from "./aim";
 
 export default function Magic() {
   return (
@@ -19,7 +15,7 @@ export default function Magic() {
             <div
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{
-                backgroundImage: `linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.8) 100%), url(${Bg})`,
+                backgroundImage: `linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.8) 100%), url(${image.hero_bg})`,
               }}
             />
 
@@ -32,7 +28,7 @@ export default function Magic() {
               <div className="flex flex-col items-center mb-2 md:mb-3">
                 <div className="relative">
                   <img
-                    src={Logo}
+                    src={image.logo}
                     className="w-[30rem] h-24 md:w-[60rem] md:h-32 object-contain drop-shadow-2xl"
                     alt="GeoMagic Logo"
                   />
@@ -79,7 +75,7 @@ export default function Magic() {
             {/* Hero Image Section */}
             <div className="relative h-[60vh] overflow-hidden">
               <img
-                src={Bg}
+                src={image.hero_bg}
                 alt="GeoMagic Hero"
                 className="w-full h-full object-cover object-center"
               />
@@ -94,7 +90,7 @@ export default function Magic() {
               <div className="flex flex-col items-center mb-0.5">
                 <div className="relative">
                   <img
-                    src={Logo}
+                    src={image.logo}
                     className="w-[30rem] h-24 md:w-[60rem] md:h-32 object-contain drop-shadow-2xl"
                     alt="GeoMagic Logo"
                   />
@@ -136,12 +132,11 @@ export default function Magic() {
             </div>
           </div>
         </div>
-        <AutoShow>
         <div className="flex flex-col items-center justify-center my-12 px-4 md:px-8">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6 text-black">
             Watch GeoMagic in Action
           </h2>
-          <div className="relative w-full max-w-3xl aspect-video rounded-2xl shadow-lg bg-black overflow-visible autoshow">
+          <div className="relative w-full max-w-3xl aspect-video rounded-2xl shadow-lg bg-black overflow-visible">
   
             <div className="absolute -top-2 -left-4 md:-top-8 md:-left-8 w-16 h-16 md:w-24 md:h-24">
                 <img src={image.vid_shape} alt="shapes" className="w-full h-full rotate-12"></img>
@@ -160,10 +155,8 @@ export default function Magic() {
             </video>
           </div>
         </div>
-        </AutoShow>
-        <AutoShow>
         {/* The section below is the "Why Geomagic?" section */}
-        <div className="flex flex-col items-center mb-16 px-4 md:px-8 lg:px-16 pt-6 autoshow">
+        <div className="flex flex-col items-center mb-16 px-4 md:px-8 lg:px-16 pt-6">
           {/* Main heading */}
           <h1 className="text-black text-3xl md:text-4xl lg:text-6xl font-bold text-center max-w-md md:max-w-lg lg:max-w-xl mb-4 lg:mb-6 ">
             WHY GEOMAGIC?
@@ -255,14 +248,13 @@ export default function Magic() {
             </div>
           </div>
         </div>
-        </AutoShow>
         {/* Product Contain */}
         <ProductShowcase />
         {/* { Gallery Section } */}
         <Image />
         {/* <TestimonialCarousel/> */}
         <TeamSection />
-       <div className="w-full max-w-7xl mx-auto p-4 md:p-6 autoshow">
+       <div className="w-full max-w-7xl mx-auto p-4 md:p-6">
       <div className="relative bg-gradient-to-r from-green-600 via-green-400 to-yellow-500 rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
         {/* Background geometric shapes */}
         <div className="absolute inset-0 overflow-hidden">

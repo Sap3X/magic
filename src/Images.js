@@ -1,5 +1,7 @@
 const image = {
 
+    logo : require('./asset/Geomagic-Logo.png'),
+    hero_bg : require('./asset/hero_section.webp'),
     vid_shape : require('./asset/circle.webp'),
 
     icon_1 : require('./asset/icon_1.png'),
@@ -7,6 +9,12 @@ const image = {
     icon_3 : require('./asset/icon_3.png'),
     icon_4 : require('./asset/icon_4.png'),
     icon_5 : require('./asset/icon_5.png'),
+
+    star : require('./asset/star-3.png'),
+    circle1 : require('./asset/ellipse-4.png'),
+    circle2 : require('./asset/ellipse-6.png'),
+    poly : require('./asset/polygon-5.png'),
+    title_bg : require('./asset/title_bg.png'),
 
     pro_kit : require('./asset/Geomagic_Pro_Kit.webp'),
     circle : require('./asset/Geomagic_Circle_Edition.webp'),

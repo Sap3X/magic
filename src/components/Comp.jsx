@@ -1,11 +1,5 @@
 import React from "react";
-import Star from "../asset/star-3.png";
-import Circle1 from "../asset/ellipse-4.png";
-import Circle2 from "../asset/ellipse-6.png";
-import Poly from "../asset/polygon-5.png";
-import Yellow_Bg from "../asset/9833793-27047-picsart-backgroundremover-1.png";
 import image from  "../Images";
-import '../index.css';
 
 // Sample product data
 const products = [
@@ -127,22 +121,22 @@ const products = [
 const decorativeShapes = [
   {
     type: "star",
-    image: Star,
+    image: image.star,
     size: "w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24",
   },
   {
     type: "circle",
-    image: Circle1,
+    image: image.circle1,
     size: "w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20",
   },
   {
     type: "triangle",
-    image: Poly,
+    image: image.poly,
     size: "w-14 h-14 sm:w-18 sm:h-18 lg:w-22 lg:h-22",
   },
   {
     type: "circle2",
-    image: Circle2,
+    image: image.circle2,
     size: "w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20",
   },
 ];
@@ -305,7 +299,7 @@ function ProductCard({ product, index }) {
   const shapePositions = productShapePositions[index] || [];
 
   return (
-    <div className="relative w-full bg-[#d9d9d9] rounded-3xl lg:rounded-[59px] shadow-lg overflow-hidden h-auto autoshow">
+    <div className="relative w-full bg-[#d9d9d9] rounded-3xl lg:rounded-[59px] shadow-lg overflow-hidden h-auto">
       {/* Decorative shapes with fixed positions */}
       {shapePositions.map((shapeConfig, idx) => {
         const shape = decorativeShapes[shapeConfig.shapeIndex];
@@ -351,7 +345,7 @@ function ProductCard({ product, index }) {
           <div className="mt-6 lg:mt-8 xl:mt-10 relative flex flex-col justify-center items-center">
             {/* Yellow background image as a banner - improved positioning and sizing */}
             <img
-              src={Yellow_Bg}
+              src={image.title_bg}
               alt="background banner"
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[280px] md:max-w-[325px] lg:max-w-[800px] xl:max-w-[900px] h-auto min-h-[80px] sm:min-h-[100px] md:min-h-[120px] lg:min-h-[140px] xl:min-h-[160px] object-cover z-[-1]"
             />

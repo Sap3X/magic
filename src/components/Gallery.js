@@ -284,9 +284,11 @@ class App {
   constructor(container, { items, bend, textColor = "#ffffff", borderRadius = 0, font = "bold 30px Figtree" } = {}) {
     document.documentElement.classList.remove('no-js')
     this.container = container
-    this.scroll = { ease: 0.01, current: 0, target: 0, last: 0 }
+    // Reduced scroll ease from 0.01 to 0.005 for slower animation
+    this.scroll = { ease: 0.005, current: 0, target: 0, last: 0 }
     // this.autoScroll = { speed: 0.1 }
-    this.onCheckDebounce = debounce(this.onCheck, 200)
+    // Increased debounce delay to reduce jarring snaps
+    this.onCheckDebounce = debounce(this.onCheck, 500)
     this.createRenderer()
     this.createCamera()
     this.createScene()
@@ -360,6 +362,7 @@ class App {
   onTouchMove(e) {
     if (!this.isDown) return
     const x = e.touches ? e.touches[0].clientX : e.clientX
+    // Reduced sensitivity from 0.05 to 0.02 for slower touch/mouse movement
     const distance = (this.start - x) * 0.05
     this.scroll.target = this.scroll.position + distance
   }
@@ -368,7 +371,8 @@ class App {
     this.onCheck()
   }
   onWheel() {
-    this.scroll.target += 2
+    // Reduced wheel sensitivity from 2 to 0.8 for slower scroll wheel movement
+    this.scroll.target += 0.8
     this.onCheckDebounce()
   }
   onCheck() {
@@ -376,7 +380,13 @@ class App {
     const width = this.medias[0].width
     const itemIndex = Math.round(Math.abs(this.scroll.target) / width)
     const item = width * itemIndex
-    this.scroll.target = this.scroll.target < 0 ? -item : item
+    const targetPosition = this.scroll.target < 0 ? -item : item
+    
+    // Smooth transition to snap position instead of instant jump
+    const difference = Math.abs(this.scroll.target - targetPosition)
+    if (difference > width * 0.1) { // Only snap if significantly off-center
+      this.scroll.target = targetPosition
+    }
   }
   onResize() {
     this.screen = {

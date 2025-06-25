@@ -9,29 +9,29 @@ const TeamSection = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Lena Pearce",
-      position: "position",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      name: "Anika R",
+      position: "Class 9",
+      image: "AR",
+      description: "Geo-Magic altered my perspective on geometry! Lines and angles were just dull book illustrations prior to this. I now construct them and observe their operation. The video lessons are really simple to follow.",
       bgColor: "bg-blue-500",
       bgPosition: "left"
     },
     {
       id: 2,
-      name: "Sophia Bach",
-      position: "position",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      name: "Rahil L",
+      position: "Class 10",
+      image: "RL",
+      description: "Trigonometry has always been difficult for me, but the Geo-Magic kit made it easier for me to see it clearly. Learning became enjoyable thanks to the models, and the QR videos provided excellent explanations of each step. I heartily recommend this to anyone who struggles with maths!",
       bgColor: "bg-green-500",
       bgPosition: "center",
       featured: true
     },
     {
       id: 3,
-      name: "Arielle Copper",
-      position: "position",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      name: "Sanya D",
+      position: "Class 8",
+      image: "SD",
+      description: "My geometry homework was so much easier after using Geo-Magic! I enjoyed constructing the shapes and at last comprehending the concepts presented in the textbook. It's entertaining, imaginative, and it also helped me raise my grades!",
       bgColor: "bg-teal-500",
       bgPosition: "right"
     }
@@ -86,7 +86,7 @@ const TeamSection = () => {
   };
 
   return (
-    <div className=" bg-gray-50 pt-8 px-4 autoshow">
+    <div className=" bg-gray-50 pt-8 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -136,11 +136,9 @@ const TeamSection = () => {
                       {/* Profile Image */}
                       <div className="flex justify-center mb-6">
                         <div className="relative">
-                          <img
-                            src={member.image}
-                            alt={member.name}
-                            className="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg"
-                          />
+                          <p className="w-20 h-20 p-5 font-extrabold text-2xl text-center rounded-full border-4 border-slate-600 shadow-lg">
+                            {member.image}
+                          </p>
                           <div className={`absolute -top-2 -right-2 w-6 h-6 ${member.bgColor} rounded-full`}></div>
                         </div>
                       </div>
