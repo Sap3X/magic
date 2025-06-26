@@ -1,0 +1,38 @@
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hover-animated-gradient {
+  background-color: #1f2937;
+  background-image: linear-gradient(-45deg, #111827, #6b7280, #1f2937, #9ca3af);
+  background-size: 600% 600%;
+}
+
+.group:hover .hover-animated-gradient {
+  animation: gradientFlow 10s ease infinite;
+}
+
+@keyframes dance {
+  0%, 100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  75% {
+    transform: translateX(5px) rotate(5deg);
+  }
+}
+
+.dance-robot {
+  animation: dance 5s infinite ease-in-out;
+}
+
