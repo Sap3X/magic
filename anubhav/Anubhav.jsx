@@ -12,67 +12,15 @@ import img8 from "./assets/DSC05306.webp";
 import img4 from "./assets/DSC05299.webp";
 import img5 from "./assets/DSC05347.webp";
 import TestimonialSlider from "./testimonnial";
-// import SmoothCoverflowCarousel from './Gallery';
 import AnubhavSection from "./trigerred";
 
 import SmoothCoverflowCarousel from "./Gallery";
 const PartnerCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const [counters, setCounters] = useState({
-    partners: 0,
-    projects: 0,
-    countries: 0,
-  });
   const [hasAnimated, setHasAnimated] = useState(false);
   const statsRef = useRef(null);
   const carouselRef = useRef(null);
-
-  // Dummy partner data with placeholder images
-  const partners = [
-    {
-      id: 1,
-      name: "AIM Innovation",
-      logo: "https://placehold.co/453x168/FFD700/000000?text=AIM+Innovation",
-    },
-    {
-      id: 2,
-      name: "RV University",
-      logo: "https://placehold.co/453x168/4169E1/FFFFFF?text=RV+University",
-    },
-    {
-      id: 3,
-      name: "NITTE University",
-      logo: "https://placehold.co/453x168/1E40AF/FFFFFF?text=NITTE+University",
-    },
-    {
-      id: 4,
-      name: "Tech Corp",
-      logo: "https://placehold.co/453x168/059669/FFFFFF?text=Tech+Corp",
-    },
-    {
-      id: 5,
-      name: "Innovation Hub",
-      logo: "https://placehold.co/453x168/DC2626/FFFFFF?text=Innovation+Hub",
-    },
-    {
-      id: 6,
-      name: "Future Labs",
-      logo: "https://placehold.co/453x168/7C3AED/FFFFFF?text=Future+Labs",
-    },
-    {
-      id: 7,
-      name: "Global Partners",
-      logo: "https://placehold.co/453x168/EA580C/FFFFFF?text=Global+Partners",
-    },
-    {
-      id: 8,
-      name: "Smart Solutions",
-      logo: "https://placehold.co/453x168/0891B2/FFFFFF?text=Smart+Solutions",
-    },
-  ];
-
-  const partnersPerView = 3;
 
   // Create extended array for seamless infinite scroll
   const extendedPartners = [
@@ -377,7 +325,7 @@ const AnubhavWebsite = () => {
             opacity: 1;
           }
         }
-        
+
         @keyframes slideInRight {
           0% {
             transform: translateX(100px);
@@ -388,7 +336,7 @@ const AnubhavWebsite = () => {
             opacity: 1;
           }
         }
-        
+
         @keyframes slideInUp {
           0% {
             transform: translateY(50px);
@@ -399,7 +347,7 @@ const AnubhavWebsite = () => {
             opacity: 1;
           }
         }
-        
+
         @keyframes fadeInScale {
           0% {
             transform: scale(0.8);
@@ -410,48 +358,48 @@ const AnubhavWebsite = () => {
             opacity: 1;
           }
         }
-        
+
         @keyframes bounce-slow {
           0%, 100% { transform: translateY(0);}
           50% { transform: translateY(-12px);}
         }
-        
+
         .animate-slide-in-left {
           animation: slideInLeft 1s ease-out forwards;
         }
-        
+
         .animate-slide-in-right {
           animation: slideInRight 1s ease-out forwards;
         }
-        
+
         .animate-slide-in-up {
           animation: slideInUp 1s ease-out forwards;
         }
-        
+
         .animate-fade-in-scale {
           animation: fadeInScale 1.2s ease-out forwards;
         }
-        
+
         .animate-bounce-slow {
           animation: bounce-slow 3s infinite;
         }
-        
+
         .animation-delay-200 {
           animation-delay: 0.2s;
         }
-        
+
         .animation-delay-400 {
           animation-delay: 0.4s;
         }
-        
+
         .animation-delay-600 {
           animation-delay: 0.6s;
         }
-        
+
         .animation-delay-800 {
           animation-delay: 0.8s;
         }
-        
+
         .animation-delay-1000 {
           animation-delay: 1s;
         }
