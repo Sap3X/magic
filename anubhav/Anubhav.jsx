@@ -1,19 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
-import {
-  Menu,
-  X,
-  Phone,
-  MapPin,
-  ChevronLeft,
-  ChevronRight,
-} from "lucide-react";
 import img1 from "./assets/Anubhav_Kit-removebg-preview.webp";
-import img8 from "./assets/DSC05306.webp";
 import img4 from "./assets/DSC05299.webp";
 import img5 from "./assets/DSC05347.webp";
 import TestimonialSlider from "./testimonnial";
 import AnubhavSection from "./trigerred";
 
+<<<<<<< HEAD
 import SmoothCoverflowCarousel from "./Gallery";
 const PartnerCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -260,6 +252,8 @@ const PartnerCarousel = () => {
   );
 };
 
+=======
+>>>>>>> 146491038c55086eaa94eae5805551a79b427925
 const AnubhavWebsite = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [selectedBox, setSelectedBox] = useState(null);

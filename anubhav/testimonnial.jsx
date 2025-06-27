@@ -6,28 +6,28 @@ const testimonials = [
 	{
 		name: "Mrs. Kavita Ma'am",
 		role: "Science Teacher, Saraswati Vidya Mandir",
-		image: "https://placehold.co/128x128?text=Hello+world",
+		image: "https://placehold.co/128x128?text=KM",
 		quote:
 			"Yaar, these Anubhav kits are too good! My students now actually enjoy coming to lab. Full marks from my side.",
 	},
 	{
 		name: "Mr. Suresh Sir",
 		role: "Maths Master, Govt. Boys School",
-		image: "https://placehold.co/128x128?text=Hello+world",
+		image: "https://placehold.co/128x128?text=SS",
 		quote:
 			"Earlier kids used to sleep in my class, now they are asking so many questions! Anubhav kit is real game changer, boss.",
 	},
 	{
 		name: "Miss Priya ",
 		role: "Computer Teacher, Little Flower School",
-		image: "https://placehold.co/128x128?text=hello+world",
+		image: "https://placehold.co/128x128?text=MP",
 		quote:
 			"With this kit, even weak students started showing interest. Sabko coding sikha diya, thanks to Anubhav!",
 	},
 	{
 		name: "Mr. Ramesh Bhaiya",
 		role: "Physics Sir, Shanti Niketan",
-		image: "https://placehold.co/128x128?text=hello+world",
+		image: "https://placehold.co/128x128?text=RB",
 		quote:
 			"Earlier theory only, now full practicals! Students are making robots and all, I am also learning with them. Mast hai!",
 	},
