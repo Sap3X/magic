@@ -1,5 +1,5 @@
 import React from "react";
-import image from  "../Images";
+import image from "../Images";
 
 // Sample product data
 const products = [
@@ -10,10 +10,7 @@ const products = [
     description:
       "This dynamic tool is designed for instructors and teachers, equipping them with the resources they need to deliver engaging geometry lessons to their students. GeoMagic Pro facilitates effective teaching and ensures that educators have the right tools to make geometry an exciting learning experience.",
     image: image.pro_kit,
-    specs: [
-      [""],
-      [""],
-    ],
+    specs: [[""], [""]],
     gradient: "from-purple-400 via-pink-500 to-red-500",
   },
   {
@@ -24,18 +21,20 @@ const products = [
       "Empower your students to dive into circular geometry with our hands-on kit and engaging tutorials. Foster a deep understanding of circular concepts and inspire learning. Let's embark on this educational adventure together.",
     image: image.circle,
     specs: [
-      ["Primary Circle - 1",
-         "Secondary Large Circle - 1",
-         "Secondary Small Circle - 1",
-         "Primary Strip - 7",
-         "Small Primary Strip - 4",
-         "Secondary Strip - 5"
+      [
+        "Primary Circle - 1",
+        "Secondary Large Circle - 1",
+        "Secondary Small Circle - 1",
+        "Primary Strip - 7",
+        "Small Primary Strip - 4",
+        "Secondary Strip - 5",
       ],
-      ["Protractor - 10",
-         "External Point Piece - 4",
-         "Nuts & Bolts - 15 Sets",
-         "Instruction Manual - 1",
-         "Spacers - 10"
+      [
+        "Protractor - 10",
+        "External Point Piece - 4",
+        "Nuts & Bolts - 15 Sets",
+        "Instruction Manual - 1",
+        "Spacers - 10",
       ],
     ],
     gradient: "from-blue-400 via-cyan-500 to-teal-500",
@@ -48,14 +47,8 @@ const products = [
       "Your Guide to Line Geometry. Explore the world of lines through hands-on activities and engaging tutorials. Master the essentials of geometry today.",
     image: image.basic,
     specs: [
-      [
-        "Strips - 10",
-        "Protractor - 10",
-        "Nuts & Bolts - 15 Sets",
-      ],
-      ["Instruction Manual - 1",
-        "Spacers - 10"
-      ],
+      ["Strips - 10", "Protractor - 10", "Nuts & Bolts - 15 Sets"],
+      ["Instruction Manual - 1", "Spacers - 10"],
     ],
     gradient: "from-green-400 via-emerald-500 to-cyan-500",
   },
@@ -66,10 +59,7 @@ const products = [
     description:
       "The Ultimate Geometry Experience for Students! GeoMagic Mini is an engaging kit that brings geometry to life with hands-on activities and critical thinking challenges. Unleash the magic of geometry with us.",
     image: image.mini,
-    specs: [
-      [""],
-      [""],
-    ],
+    specs: [[""], [""]],
     gradient: "from-yellow-400 via-orange-500 to-red-500",
   },
   {
@@ -86,13 +76,14 @@ const products = [
         "Secondary Small Circle - 1",
         "Primary Strip - 7",
         "Small Primary Strip - 4",
-        "Secondary Strip - 5"
+        "Secondary Strip - 5",
       ],
-      ["Protractor - 10",
-         "External Point Piece - 4",
-         "Nuts & Bolts - 15 Sets",
-         "Instruction Manual - 1",
-         "Spacers - 10"
+      [
+        "Protractor - 10",
+        "External Point Piece - 4",
+        "Nuts & Bolts - 15 Sets",
+        "Instruction Manual - 1",
+        "Spacers - 10",
       ],
     ],
     gradient: "from-indigo-400 via-purple-500 to-pink-500",
@@ -105,13 +96,8 @@ const products = [
       "Your Path to Line Geometry Mastery! Delve into the fascinating realm of lines with our interactive activities and engaging tutorials. This is your chance to become a geometry expert. Begin your geometric journey now!",
     image: image.basic_mini,
     specs: [
-      ["Strips - 10",
-         "Protractor - 10",
-         "Nuts & Bolts - 15 Sets"
-      ],
-      ["Instruction Manual - 1",
-         "Spacers - 10"
-      ],
+      ["Strips - 10", "Protractor - 10", "Nuts & Bolts - 15 Sets"],
+      ["Instruction Manual - 1", "Spacers - 10"],
     ],
     gradient: "from-rose-400 via-red-500 to-orange-500",
   },
@@ -221,8 +207,7 @@ const productShapePositions = [
     },
     {
       shapeIndex: 1,
-      position:
-        "bottom-4 right-6 ",
+      position: "bottom-4 right-6 ",
       rotation: "15deg",
     },
     {
@@ -246,8 +231,7 @@ const productShapePositions = [
     {
       //pie
       shapeIndex: 1,
-      position:
-        "bottom-8 left-8 ",
+      position: "bottom-8 left-8 ",
       rotation: "-45deg",
     },
     {
@@ -273,8 +257,7 @@ const productShapePositions = [
     {
       //c-shape
       shapeIndex: 0,
-      position:
-        "bottom-1/2 right-8 ",
+      position: "bottom-1/2 right-8 ",
       rotation: "45deg",
     },
     {
@@ -332,7 +315,9 @@ function ProductCard({ product, index }) {
           {/* Product image */}
           <div className="relative z-30 h-full flex items-center justify-center">
             <img
-              className={`w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain ${ numbfour ? "rotate-12" : ""  } ${ numbfive ? "rotate-12" : "" }`}
+              className={`w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain ${
+                numbfour ? "rotate-12" : ""
+              } ${numbfive ? "rotate-12" : ""}`}
               alt={product.name}
               src={product.image}
             />
@@ -390,7 +375,7 @@ function ProductCard({ product, index }) {
               ))}
             </div>
           </div>
-        </div> 
+        </div>
       </div>
     </div>
   );

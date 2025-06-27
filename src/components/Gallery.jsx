@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import image from '../Images';
+import React, { useState, useEffect, useRef } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import image from "../Images";
 
 const SmoothCoverflowCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -8,7 +8,7 @@ const SmoothCoverflowCarousel = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const containerRef = useRef(null);
-  
+
   // Touch handling state
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
@@ -32,10 +32,10 @@ const SmoothCoverflowCarousel = () => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-    
+
     checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   const nextSlide = () => {
@@ -48,7 +48,9 @@ const SmoothCoverflowCarousel = () => {
   const prevSlide = () => {
     if (isTransitioning) return;
     setIsTransitioning(true);
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
     setTimeout(() => setIsTransitioning(false), 100);
   };
 
@@ -111,63 +113,65 @@ const SmoothCoverflowCarousel = () => {
       slides.push({
         src: images[index],
         index: index,
-        position: i - 3
+        position: i - 3,
       });
     }
     return slides;
   };
 
   const getSlideStyle = (position) => {
-    const baseTransform = 'translate(-50%, -50%)';
+    const baseTransform = "translate(-50%, -50%)";
     const positionTransforms = {
-      '-3': `${baseTransform} translateX(-720px) translateZ(-300px) scale(0.3) rotateY(50deg)`,
-      '-2': `${baseTransform} translateX(-480px) translateZ(-200px) scale(0.5) rotateY(40deg)`,
-      '-1': `${baseTransform} translateX(-240px) translateZ(-100px) scale(0.75) rotateY(25deg)`,
-      '0': `${baseTransform} translateX(0px) translateZ(0px) scale(1) rotateY(0deg)`,
-      '1': `${baseTransform} translateX(240px) translateZ(-100px) scale(0.75) rotateY(-25deg)`,
-      '2': `${baseTransform} translateX(480px) translateZ(-200px) scale(0.5) rotateY(-40deg)`,
-      '3': `${baseTransform} translateX(720px) translateZ(-300px) scale(0.3) rotateY(-50deg)`
+      "-3": `${baseTransform} translateX(-720px) translateZ(-300px) scale(0.3) rotateY(50deg)`,
+      "-2": `${baseTransform} translateX(-480px) translateZ(-200px) scale(0.5) rotateY(40deg)`,
+      "-1": `${baseTransform} translateX(-240px) translateZ(-100px) scale(0.75) rotateY(25deg)`,
+      0: `${baseTransform} translateX(0px) translateZ(0px) scale(1) rotateY(0deg)`,
+      1: `${baseTransform} translateX(240px) translateZ(-100px) scale(0.75) rotateY(-25deg)`,
+      2: `${baseTransform} translateX(480px) translateZ(-200px) scale(0.5) rotateY(-40deg)`,
+      3: `${baseTransform} translateX(720px) translateZ(-300px) scale(0.3) rotateY(-50deg)`,
     };
 
     const positionOpacity = {
-      '-3': 0.1,
-      '-2': 0.4,
-      '-1': 0.7,
-      '0': 1,
-      '1': 0.7,
-      '2': 0.4,
-      '3': 0.1
+      "-3": 0.1,
+      "-2": 0.4,
+      "-1": 0.7,
+      0: 1,
+      1: 0.7,
+      2: 0.4,
+      3: 0.1,
     };
 
     const positionBrightness = {
-      '-3': 'brightness(0.4)',
-      '-2': 'brightness(0.6)',
-      '-1': 'brightness(0.8)',
-      '0': 'brightness(1)',
-      '1': 'brightness(0.8)',
-      '2': 'brightness(0.6)',
-      '3': 'brightness(0.4)'
+      "-3": "brightness(0.4)",
+      "-2": "brightness(0.6)",
+      "-1": "brightness(0.8)",
+      0: "brightness(1)",
+      1: "brightness(0.8)",
+      2: "brightness(0.6)",
+      3: "brightness(0.4)",
     };
 
     return {
-      position: 'absolute',
-      top: '50%',
-      left: '50%',
-      width: '400px',
-      height: '300px',
-      borderRadius: '20px',
-      overflow: 'hidden',
-      cursor: isMobile ? 'default' : 'pointer',
-      transition: isDragging ? 'none' : 'transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease',
-      boxShadow: '0 25px 80px rgba(0,0,0,0.3), 0 10px 30px rgba(0,0,0,0.2)',
-      transformOrigin: 'center center',
-      transformStyle: 'preserve-3d',
-      backfaceVisibility: 'hidden',
-      willChange: 'transform, opacity, filter',
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      width: "400px",
+      height: "300px",
+      borderRadius: "20px",
+      overflow: "hidden",
+      cursor: isMobile ? "default" : "pointer",
+      transition: isDragging
+        ? "none"
+        : "transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease",
+      boxShadow: "0 25px 80px rgba(0,0,0,0.3), 0 10px 30px rgba(0,0,0,0.2)",
+      transformOrigin: "center center",
+      transformStyle: "preserve-3d",
+      backfaceVisibility: "hidden",
+      willChange: "transform, opacity, filter",
       transform: positionTransforms[position] || baseTransform,
       opacity: positionOpacity[position] ?? 0,
       zIndex: 100 - Math.abs(position),
-      filter: positionBrightness[position] || 'brightness(0.3)',
+      filter: positionBrightness[position] || "brightness(0.3)",
     };
   };
 
@@ -181,8 +185,14 @@ const SmoothCoverflowCarousel = () => {
         width: `${400 * mobileScale}px`,
         height: `${300 * mobileScale}px`,
         transform: baseStyle.transform
-          .replace(/translateX\(([^)]+)\)/g, (_, val) => `translateX(${parseFloat(val) * mobileScale}px)`)
-          .replace(/translateZ\(([^)]+)\)/g, (_, val) => `translateZ(${parseFloat(val) * mobileScale}px)`),
+          .replace(
+            /translateX\(([^)]+)\)/g,
+            (_, val) => `translateX(${parseFloat(val) * mobileScale}px)`
+          )
+          .replace(
+            /translateZ\(([^)]+)\)/g,
+            (_, val) => `translateZ(${parseFloat(val) * mobileScale}px)`
+          ),
       };
     }
 
@@ -195,7 +205,7 @@ const SmoothCoverflowCarousel = () => {
         <div
           ref={containerRef}
           className="relative h-[300px] md:h-[400px] overflow-hidden"
-          style={{ perspective: '1500px' }}
+          style={{ perspective: "1500px" }}
           onMouseEnter={() => !isMobile && setIsAutoPlaying(false)}
           onMouseLeave={() => !isMobile && setIsAutoPlaying(true)}
           onTouchStart={handleTouchStart}
@@ -206,14 +216,16 @@ const SmoothCoverflowCarousel = () => {
             <div
               key={slide.index}
               style={getResponsiveSlideStyle(slide.position)}
-              onClick={() => !isMobile && slide.position !== 0 && goToSlide(slide.index)}
+              onClick={() =>
+                !isMobile && slide.position !== 0 && goToSlide(slide.index)
+              }
               className="group select-none"
             >
               <img
                 src={slide.src}
                 alt={`Slide ${slide.index + 1}`}
                 className={`w-full h-full object-cover transition-transform duration-500 ease-out ${
-                  !isMobile ? 'group-hover:scale-105' : ''
+                  !isMobile ? "group-hover:scale-105" : ""
                 }`}
                 loading="lazy"
                 draggable={false}
@@ -248,7 +260,7 @@ const SmoothCoverflowCarousel = () => {
           </>
         )}
       </div>
-      
+
       {/* Mobile swipe indicator */}
       {isMobile && (
         <div className="mt-4 text-center text-gray-500 text-sm">
