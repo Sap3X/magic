@@ -166,7 +166,7 @@ const SmoothCoverflowCarousel = () => {
       <div className="relative w-full max-w-7xl mx-auto">
         <div
           ref={containerRef}
-          className="relative sm:overflow-hidden lg:overflow-visible"
+          className="relative overflow-hidden "
           style={{
             height: `${gallerySize.height + 20}px`,
             perspective: "1200px",
