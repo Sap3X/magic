@@ -258,7 +258,7 @@ const SmoothCoverflowCarousel = () => {
               <ChevronRight className="w-8 h-8 text-white group-hover:scale-110 transition-transform duration-200" />
             </button>
           </>
-        )}
+        )} 
       </div>
 
       {/* Mobile swipe indicator */}
