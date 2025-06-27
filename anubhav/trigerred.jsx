@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import img8 from './assets/DSC05351.webp';
+import React, { useState, useEffect, useRef } from "react";
+import img8 from "./assets/DSC05351.webp";
 
 const AnubhavSection = () => {
   const [animationStage, setAnimationStage] = useState(0);
@@ -22,7 +22,7 @@ const AnubhavSection = () => {
       },
       {
         threshold: 0.2,
-        rootMargin: '-50px',
+        rootMargin: "-50px",
       }
     );
 
@@ -44,7 +44,11 @@ const AnubhavSection = () => {
         <div
           className={`
             relative transition-all duration-1000 ease-out
-            ${animationStage > 0 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
+            ${
+              animationStage > 0
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
+            }
           `}
         >
           {/* Background Blur Card */}
@@ -58,7 +62,11 @@ const AnubhavSection = () => {
                 className={`
                   lg:col-span-2 relative p-6 flex items-center justify-center
                   transition-all duration-700 ease-out
-                  ${animationStage > 0 ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'}
+                  ${
+                    animationStage > 0
+                      ? "translate-x-0 opacity-100"
+                      : "-translate-x-8 opacity-0"
+                  }
                 `}
               >
                 <div className="relative group">
@@ -79,7 +87,7 @@ const AnubhavSection = () => {
                   <div className="absolute -top-2 -right-2 w-4 h-4 bg-orange-400 rounded-full animate-pulse" />
                   <div
                     className="absolute -bottom-3 -left-3 w-6 h-6 bg-amber-300 rounded-full animate-bounce"
-                    style={{ animationDelay: '1s' }}
+                    style={{ animationDelay: "1s" }}
                   />
                 </div>
               </div>
@@ -90,7 +98,11 @@ const AnubhavSection = () => {
                 <div
                   className={`
                     text-center mb-8 transition-all duration-700 ease-out delay-100
-                    ${animationStage > 1 ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}
+                    ${
+                      animationStage > 1
+                        ? "translate-y-0 opacity-100"
+                        : "translate-y-6 opacity-0"
+                    }
                   `}
                 >
                   <div className="relative inline-block">
@@ -102,23 +114,29 @@ const AnubhavSection = () => {
                     <div
                       className="absolute left-1/2 -translate-x-1/2 w-32 sm:w-48 h-1 bg-gradient-to-r from-orange-400 to-amber-500 rounded-full transition-all duration-700 delay-300"
                       style={{
-                        bottom: '-8px', // bring line closer to heading
-                        width: animationStage > 2 ? '60%' : '0%',
-                        transitionProperty: 'width',
+                        bottom: "-8px", // bring line closer to heading
+                        width: animationStage > 2 ? "60%" : "0%",
+                        transitionProperty: "width",
                       }}
                     />
                   </div>
                   <div className="h-8"></div>
                   {/* Subtitle */}
                   <div className="flex items-center justify-center space-x-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">
-                    <span className="transform transition-all duration-500 hover:scale-110">Innovate</span>
+                    <span className="transform transition-all duration-500 hover:scale-110">
+                      Innovate
+                    </span>
                     <div className="w-2 h-2 bg-orange-400 rounded-full animate-pulse" />
-                    <span className="transform transition-all duration-500 hover:scale-110">Create</span>
+                    <span className="transform transition-all duration-500 hover:scale-110">
+                      Create
+                    </span>
                     <div
                       className="w-2 h-2 bg-amber-400 rounded-full animate-pulse"
-                      style={{ animationDelay: '0.5s' }}
+                      style={{ animationDelay: "0.5s" }}
                     />
-                    <span className="transform transition-all duration-500 hover:scale-110">Learn</span>
+                    <span className="transform transition-all duration-500 hover:scale-110">
+                      Learn
+                    </span>
                   </div>
                 </div>
 
@@ -126,11 +144,19 @@ const AnubhavSection = () => {
                 <div
                   className={`
                     mb-12 transition-all duration-700 ease-out delay-200
-                    ${animationStage > 2 ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}
+                    ${
+                      animationStage > 2
+                        ? "translate-y-0 opacity-100"
+                        : "translate-y-6 opacity-0"
+                    }
                   `}
                 >
                   <p className="text-gray-700 text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed text-center">
-                    Anubhav empowers students and educators with hands-on STEM, AI, and Robotics experiences. Our kits are designed to spark curiosity, foster creativity, and build real-world problem-solving skills—making learning engaging, practical, and future-ready for every classroom.
+                    Anubhav empowers students and educators with hands-on STEM,
+                    AI, and Robotics experiences. Our kits are designed to spark
+                    curiosity, foster creativity, and build real-world
+                    problem-solving skills—making learning engaging, practical,
+                    and future-ready for every classroom.
                   </p>
                 </div>
 
@@ -138,18 +164,48 @@ const AnubhavSection = () => {
                 <div
                   className={`
                     grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 transition-all duration-700 ease-out delay-300
-                    ${animationStage > 3 ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}
+                    ${
+                      animationStage > 3
+                        ? "translate-y-0 opacity-100"
+                        : "translate-y-8 opacity-0"
+                    }
                   `}
                 >
                   {/* Applied Physics */}
                   <FeatureCard
                     icon={
                       // Thinner Atom SVG for Applied Physics
-                      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="1.2" viewBox="0 0 24 24">
-                        <circle cx="12" cy="12" r="2.5" fill="currentColor"/>
-                        <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="currentColor"/>
-                        <ellipse cx="12" cy="12" rx="3.5" ry="9" stroke="currentColor" transform="rotate(60 12 12)"/>
-                        <ellipse cx="12" cy="12" rx="3.5" ry="9" stroke="currentColor" transform="rotate(120 12 12)"/>
+                      <svg
+                        className="w-8 h-8 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.2"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle cx="12" cy="12" r="2.5" fill="currentColor" />
+                        <ellipse
+                          cx="12"
+                          cy="12"
+                          rx="9"
+                          ry="3.5"
+                          stroke="currentColor"
+                        />
+                        <ellipse
+                          cx="12"
+                          cy="12"
+                          rx="3.5"
+                          ry="9"
+                          stroke="currentColor"
+                          transform="rotate(60 12 12)"
+                        />
+                        <ellipse
+                          cx="12"
+                          cy="12"
+                          rx="3.5"
+                          ry="9"
+                          stroke="currentColor"
+                          transform="rotate(120 12 12)"
+                        />
                       </svg>
                     }
                     label="Applied Physics"
@@ -157,7 +213,11 @@ const AnubhavSection = () => {
                   {/* Create and Innovate */}
                   <FeatureCard
                     icon={
-                      <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <svg
+                        className="w-8 h-8 text-white"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
                         <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z" />
                       </svg>
                     }
@@ -167,7 +227,11 @@ const AnubhavSection = () => {
                   {/* Enhances Teaching */}
                   <FeatureCard
                     icon={
-                      <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <svg
+                        className="w-8 h-8 text-white"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
                         <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" />
                       </svg>
                     }
@@ -177,7 +241,11 @@ const AnubhavSection = () => {
                   {/* Problem Solving */}
                   <FeatureCard
                     icon={
-                      <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <svg
+                        className="w-8 h-8 text-white"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
                         <path d="M21,9V7L15,1H5C3.89,1 3,1.89 3,3V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V9M19,19H5V3H14V9H19V19Z" />
                       </svg>
                     }
@@ -193,7 +261,7 @@ const AnubhavSection = () => {
           <div className="absolute top-10 right-10 w-20 h-20 bg-gradient-to-br from-orange-300/20 to-amber-400/20 rounded-full blur-xl animate-pulse" />
           <div
             className="absolute bottom-10 left-10 w-32 h-32 bg-gradient-to-br from-amber-300/10 to-orange-400/10 rounded-full blur-2xl animate-pulse"
-            style={{ animationDelay: '2s' }}
+            style={{ animationDelay: "2s" }}
           />
         </div>
       </div>

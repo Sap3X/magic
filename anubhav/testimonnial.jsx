@@ -125,27 +125,6 @@ export default function TestimonialSection() {
 						))}
 					</motion.div>
 				</AnimatePresence>
-				{/* Navigation Arrows */}
-				{/* 
-                <div className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-10 flex items-center">
-                    <button
-                        onClick={prevTestimonial}
-                        className="bg-white border-2 border-white text-[#FFA500] p-3 rounded-full shadow hover:bg-[#FFA500] hover:text-white hover:scale-110 transition-all duration-200"
-                        aria-label="Previous testimonial"
-                    >
-                        <ChevronLeft className="w-6 h-6" />
-                    </button>
-                </div>
-                <div className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-10 flex items-center">
-                    <button
-                        onClick={nextTestimonial}
-                        className="bg-white border-2 border-white text-[#FFA500] p-3 rounded-full shadow hover:bg-[#FFA500] hover:text-white hover:scale-110 transition-all duration-200"
-                        aria-label="Next testimonial"
-                    >
-                        <ChevronRight className="w-6 h-6" />
-                    </button>
-                </div>
-                */}
             </div>
         </div>
     );

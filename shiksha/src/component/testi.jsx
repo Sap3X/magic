@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -7,22 +7,25 @@ const TestimonialsSection = () => {
       name: "Priya Sharma",
       role: "Computer Science Student",
       image: "https://placehold.co/600x400?text=PS",
-      testimonial: "Shiksha has transformed my learning experience. The interactive courses and personalized guidance helped me excel in my studies and land my dream internship."
+      testimonial:
+        "Shiksha has transformed my learning experience. The interactive courses and personalized guidance helped me excel in my studies and land my dream internship.",
     },
     {
       id: 2,
       name: "Rajesh Kumar",
       role: "Engineering Graduate",
       image: "https://placehold.co/600x400?text=RK",
-      testimonial: "The comprehensive curriculum and expert mentorship at Shiksha gave me the confidence to pursue advanced studies and achieve my career goals."
+      testimonial:
+        "The comprehensive curriculum and expert mentorship at Shiksha gave me the confidence to pursue advanced studies and achieve my career goals.",
     },
     {
       id: 3,
       name: "Anita Verma",
       role: "Data Science Enthusiast",
       image: "https://placehold.co/600x400?text=AV",
-      testimonial: "Shiksha's innovative approach to education made complex concepts easy to understand. The practical projects helped me build a strong portfolio."
-    }
+      testimonial:
+        "Shiksha's innovative approach to education made complex concepts easy to understand. The practical projects helped me build a strong portfolio.",
+    },
   ];
 
   return (
@@ -36,11 +39,14 @@ const TestimonialsSection = () => {
 
       {/* Grid Pattern Overlay */}
       <div className="absolute inset-0 opacity-5 md:opacity-10">
-        <div className="w-full h-full" style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+        <div
+          className="w-full h-full"
+          style={{
+            backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
                            linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
-          backgroundSize: '30px 30px'
-        }}></div>
+            backgroundSize: "30px 30px",
+          }}
+        ></div>
       </div>
 
       {/* Main Content */}
@@ -51,7 +57,9 @@ const TestimonialsSection = () => {
             What people say
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed px-2">
-            Discover what our satisfied students have to say about their transformative learning experiences with Shiksha's innovative education platform.
+            Discover what our satisfied students have to say about their
+            transformative learning experiences with Shiksha's innovative
+            education platform.
           </p>
         </div>
 
@@ -62,7 +70,7 @@ const TestimonialsSection = () => {
               key={testimonial.id}
               className="group bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 hover:bg-white/15 transition-all duration-500 hover:scale-105 hover:shadow-2xl animate-slide-in-up transform hover:-translate-y-2 active:scale-95"
               style={{
-                animationDelay: `${index * 0.3}s`
+                animationDelay: `${index * 0.3}s`,
               }}
             >
               {/* Profile Section */}
@@ -109,14 +117,16 @@ const TestimonialsSection = () => {
                       className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-400 fill-current transform transition-transform duration-300 hover:scale-125 animate-twinkle"
                       viewBox="0 0 20 20"
                       style={{
-                        animationDelay: `${i * 0.1}s`
+                        animationDelay: `${i * 0.1}s`,
                       }}
                     >
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   ))}
                 </div>
-                <span className="ml-2 text-xs sm:text-sm text-blue-200 group-hover:text-white transition-colors duration-300">5.0</span>
+                <span className="ml-2 text-xs sm:text-sm text-blue-200 group-hover:text-white transition-colors duration-300">
+                  5.0
+                </span>
               </div>
             </div>
           ))}
@@ -144,12 +154,17 @@ const TestimonialsSection = () => {
         .animation-delay-4000 {
           animation-delay: 4s;
         }
-        
+
         @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-10px); }
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
         }
-        
+
         @keyframes fadeInUp {
           from {
             opacity: 0;
@@ -160,7 +175,7 @@ const TestimonialsSection = () => {
             transform: translateY(0);
           }
         }
-        
+
         @keyframes slideInUp {
           from {
             opacity: 0;
@@ -171,35 +186,40 @@ const TestimonialsSection = () => {
             transform: translateY(0) scale(1);
           }
         }
-        
+
         @keyframes twinkle {
-          0%, 100% { opacity: 1; }
-          50% { opacity: 0.5; }
+          0%,
+          100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0.5;
+          }
         }
-        
+
         .animate-float {
           animation: float 4s ease-in-out infinite;
         }
-        
+
         .animate-fade-in-up {
           animation: fadeInUp 1s ease-out forwards;
         }
-        
+
         .animate-slide-in-up {
           animation: slideInUp 0.8s ease-out forwards;
           opacity: 0;
         }
-        
+
         .animate-twinkle {
           animation: twinkle 2s ease-in-out infinite;
         }
-        
+
         /* Mobile specific animations */
         @media (max-width: 640px) {
           .animate-slide-in-up {
             animation-duration: 0.6s;
           }
-          
+
           @keyframes slideInUp {
             from {
               opacity: 0;
@@ -211,7 +231,7 @@ const TestimonialsSection = () => {
             }
           }
         }
-        
+
         /* Tablet specific optimizations */
         @media (min-width: 641px) and (max-width: 1024px) {
           .grid > div:nth-child(odd) {
@@ -221,13 +241,13 @@ const TestimonialsSection = () => {
             animation-delay: 0.4s;
           }
         }
-        
+
         /* Touch device optimizations */
         @media (hover: none) and (pointer: coarse) {
           .group:hover {
             transform: scale(1.02) !important;
           }
-          
+
           .group-hover\\:scale-110 {
             transform: scale(1.05) !important;
           }
